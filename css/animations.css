@@ -1,0 +1,236 @@
+/* ==========================
+   ANIMAÇÕES GERAIS
+========================== */
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+@keyframes pulse {
+
+    0% {
+        box-shadow: 0 0 0 rgba(59,130,246,.35);
+    }
+
+    50% {
+        box-shadow: 0 0 35px rgba(59,130,246,.7);
+    }
+
+    100% {
+        box-shadow: 0 0 0 rgba(59,130,246,.35);
+    }
+
+}
+
+@keyframes glow {
+
+    from {
+        filter: drop-shadow(0 0 5px #3b82f6);
+    }
+
+    to {
+        filter: drop-shadow(0 0 20px #3b82f6);
+    }
+
+}
+
+@keyframes gradient {
+
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 200%;
+    }
+
+}
+
+@keyframes revealUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.mockup-card{
+
+    animation: float 6s ease-in-out infinite;
+
+}
+
+.floating-card{
+
+    animation: float 4s ease-in-out infinite;
+
+}
+
+.floating-card-two{
+
+    animation-delay:1.5s;
+
+}
+
+/* ==========================
+   BOTÕES
+========================== */
+
+.btn-primary{
+
+    animation:pulse 4s infinite;
+
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+.logo img{
+
+    animation:glow 2s ease-in-out infinite alternate;
+
+}
+
+/* ==========================
+   HOVER DOS CARDS
+========================== */
+
+.service-card,
+.process-card,
+.tech-card{
+
+    overflow:hidden;
+    position:relative;
+
+}
+
+.service-card::before,
+.process-card::before,
+.tech-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100%;
+
+    left:-100%;
+
+    width:250%;
+
+    height:250%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(59,130,246,.10),
+        transparent
+    );
+
+    transform:rotate(20deg);
+
+    transition:.8s;
+
+}
+
+.service-card:hover::before,
+.process-card:hover::before,
+.tech-card:hover::before{
+
+    top:100%;
+    left:100%;
+
+}
+
+/* ==========================
+   TÍTULOS
+========================== */
+
+.hero h1{
+
+    animation:revealUp .9s ease;
+
+}
+
+.hero p{
+
+    animation:revealUp 1.2s ease;
+
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#050816;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#3b82f6;
+
+}
+
+/* ==========================
+   SELEÇÃO DE TEXTO
+========================== */
+
+::selection{
+
+    background:#2563eb;
+    color:white;
+
+}
+
+/* ==========================
+   TRANSIÇÕES
+========================== */
+
+*{
+
+    transition:
+    background .3s,
+    color .3s,
+    border .3s;
+
+}

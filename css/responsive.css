@@ -1,0 +1,100 @@
+@media (max-width: 980px) {
+  .nav-menu,
+  .nav-button {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .nav-menu.active {
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 100%;
+    padding: 28px;
+    background: #050816;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content,
+  .project-content {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid,
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 80px 0;
+  }
+
+  .navbar {
+    height: 74px;
+  }
+
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero h1,
+  .section-title h2,
+  .project-info h2,
+  .about h2,
+  .cta h2 {
+    letter-spacing: -1px;
+  }
+
+  .services-grid,
+  .process-grid,
+  .tech-grid,
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .mockup-card {
+    transform: none;
+  }
+
+  .mockup-body {
+    grid-template-columns: 1fr;
+  }
+
+  .mockup-sidebar {
+    display: none;
+  }
+
+  .floating-card {
+    display: none;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+}
