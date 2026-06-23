@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>TaskFlow | Loung Tech</title>
+
+  <meta
+    name="description"
+    content="TaskFlow: dashboard demonstrativo para gestão de tarefas, métricas, gráficos e produtividade."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <aside class="sidebar">
+    <a href="/" class="logo">TaskFlow</a>
+
+    <nav>
+      <a href="#" class="active">Dashboard</a>
+      <a href="#">Tarefas</a>
+      <a href="#">Projetos</a>
+      <a href="#">Equipe</a>
+      <a href="#">Relatórios</a>
+      <a href="/">Voltar</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+
+    <header class="topbar">
+      <div>
+        <span>Bem-vindo de volta</span>
+        <h1>Dashboard</h1>
+      </div>
+
+      <div class="user-card">
+        <div class="user-avatar">LT</div>
+        <div>
+          <strong>Loung Tech</strong>
+          <small>Admin</small>
+        </div>
+      </div>
+    </header>
+
+    <section class="metrics">
+      <article class="metric-card">
+        <span>Tarefas concluídas</span>
+        <h2>128</h2>
+        <p>+18% essa semana</p>
+      </article>
+
+      <article class="metric-card">
+        <span>Projetos ativos</span>
+        <h2>12</h2>
+        <p>4 em andamento</p>
+      </article>
+
+      <article class="metric-card">
+        <span>Produtividade</span>
+        <h2>87%</h2>
+        <p>Meta quase batida</p>
+      </article>
+
+      <article class="metric-card">
+        <span>Membros</span>
+        <h2>08</h2>
+        <p>Equipe conectada</p>
+      </article>
+    </section>
+
+    <section class="dashboard-grid">
+
+      <article class="panel">
+        <div class="panel-header">
+          <h2>Progresso semanal</h2>
+          <span>Últimos 7 dias</span>
+        </div>
+
+        <div class="bar-chart">
+          <div class="bar" style="height: 45%"><span>Seg</span></div>
+          <div class="bar" style="height: 70%"><span>Ter</span></div>
+          <div class="bar" style="height: 55%"><span>Qua</span></div>
+          <div class="bar" style="height: 82%"><span>Qui</span></div>
+          <div class="bar" style="height: 65%"><span>Sex</span></div>
+          <div class="bar" style="height: 35%"><span>Sáb</span></div>
+          <div class="bar" style="height: 50%"><span>Dom</span></div>
+        </div>
+      </article>
+
+      <article class="panel login-panel">
+        <h2>Acesso rápido</h2>
+        <p>Área demonstrativa de login para sistemas web.</p>
+
+        <form>
+          <input type="email" placeholder="E-mail" />
+          <input type="password" placeholder="Senha" />
+          <button type="button">Entrar</button>
+        </form>
+      </article>
+
+    </section>
+
+    <section class="panel table-panel">
+      <div class="panel-header">
+        <h2>Tarefas recentes</h2>
+        <span>Atualizado hoje</span>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Tarefa</th>
+              <th>Responsável</th>
+              <th>Status</th>
+              <th>Prazo</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Finalizar landing page</td>
+              <td>Ana</td>
+              <td><span class="status done">Concluído</span></td>
+              <td>Hoje</td>
+            </tr>
+
+            <tr>
+              <td>Criar dashboard</td>
+              <td>Rafael</td>
+              <td><span class="status progress">Em andamento</span></td>
+              <td>Amanhã</td>
+            </tr>
+
+            <tr>
+              <td>Revisar API</td>
+              <td>Lucas</td>
+              <td><span class="status pending">Pendente</span></td>
+              <td>Sexta</td>
+            </tr>
+
+            <tr>
+              <td>Publicar versão V2</td>
+              <td>Equipe</td>
+              <td><span class="status progress">Em andamento</span></td>
+              <td>Semana atual</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

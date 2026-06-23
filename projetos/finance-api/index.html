@@ -1,0 +1,240 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Finance API | Loung Tech</title>
+
+    <meta
+        name="description"
+        content="Documentação demonstrativa de uma API Financeira REST desenvolvida pela Loung Tech."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                Finance API
+            </div>
+
+            <a href="/" class="btn-home">
+                Voltar ao Portfólio
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <span class="badge">
+                REST API Documentation
+            </span>
+
+            <h1>
+                Finance API
+            </h1>
+
+            <p>
+                API REST para gerenciamento de usuários,
+                autenticação, transações e despesas financeiras.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- TECNOLOGIAS -->
+
+    <section class="techs">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>Stack</span>
+                <h2>Tecnologias Utilizadas</h2>
+            </div>
+
+            <div class="tech-grid">
+
+                <div class="tech-card">
+                    <h3>JWT</h3>
+                    <p>
+                        Autenticação baseada em tokens.
+                    </p>
+                </div>
+
+                <div class="tech-card">
+                    <h3>MySQL</h3>
+                    <p>
+                        Banco de dados relacional.
+                    </p>
+                </div>
+
+                <div class="tech-card">
+                    <h3>REST API</h3>
+                    <p>
+                        Arquitetura moderna baseada em recursos.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ENDPOINTS -->
+
+    <section class="endpoints">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>Endpoints</span>
+                <h2>Documentação</h2>
+            </div>
+
+            <!-- GET USERS -->
+
+            <div class="endpoint get">
+
+                <div class="method">
+                    GET
+                </div>
+
+                <div class="content">
+                    <h3>/users</h3>
+                    <p>
+                        Retorna todos os usuários cadastrados.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- POST LOGIN -->
+
+            <div class="endpoint post">
+
+                <div class="method">
+                    POST
+                </div>
+
+                <div class="content">
+                    <h3>/login</h3>
+                    <p>
+                        Realiza autenticação e retorna JWT.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- GET TRANSACTIONS -->
+
+            <div class="endpoint get">
+
+                <div class="method">
+                    GET
+                </div>
+
+                <div class="content">
+                    <h3>/transactions</h3>
+                    <p>
+                        Lista todas as transações do usuário.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- POST EXPENSES -->
+
+            <div class="endpoint post">
+
+                <div class="method">
+                    POST
+                </div>
+
+                <div class="content">
+                    <h3>/expenses</h3>
+                    <p>
+                        Cria uma nova despesa.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- DELETE EXPENSE -->
+
+            <div class="endpoint delete">
+
+                <div class="method">
+                    DELETE
+                </div>
+
+                <div class="content">
+                    <h3>/expenses/{id}</h3>
+                    <p>
+                        Remove uma despesa existente.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EXEMPLO RESPONSE -->
+
+    <section class="response">
+
+        <div class="container">
+
+            <div class="section-title">
+                <span>Example</span>
+                <h2>Resposta JSON</h2>
+            </div>
+
+<pre>
+{
+  "id": 1,
+  "name": "João Silva",
+  "email": "joao@email.com",
+  "balance": 5230.50
+}
+</pre>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                Projeto demonstrativo desenvolvido pela Loung Tech.
+            </p>
+
+            <a href="/">
+                ← Voltar ao site principal
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+```

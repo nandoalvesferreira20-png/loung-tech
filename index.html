@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -27,15 +28,15 @@
   <header class="header" id="header">
     <nav class="navbar container">
       <a href="#" class="logo">
-            <img src="img/logo.jpeg" alt="Logo Loung Tech">
-                Loung Tech
-        </a>
+        <img src="img/logo.jpeg" alt="Logo Loung Tech">
+        Loung Tech
+      </a>
 
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#inicio">Início</a></li>
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#processo">Processo</a></li>
-        <li><a href="#projeto">Projeto</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
         <li><a href="#tecnologias">Tecnologias</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
@@ -96,8 +97,8 @@
 
           <div class="hero-stats">
             <div>
-              <strong>01+</strong>
-              <span>Projeto em desenvolvimento</span>
+              <strong>06+</strong>
+              <span>Projetos no portifólio</span>
             </div>
 
             <div>
@@ -119,9 +120,9 @@
               <div class="mockup-sidebar"></div>
 
               <div class="mockup-main">
-                <span class="mockup-tag">Projeto em desenvolvimento</span>
-                <h3>E-commerce</h3>
-                <p>Uma aplicação web completa para venda de produtos online.</p>
+                <span class="mockup-tag">Projetos digitais</span>
+                <h3>Web Solutions</h3>
+                <p>Sites, sistemas, APIs e automações para empresas modernas.</p>
 
                 <div class="mockup-grid">
                   <div></div>
@@ -238,56 +239,81 @@
       </div>
     </section>
 
-    <section class="section featured-project" id="projeto">
-      <div class="container project-content">
-
-        <div class="project-preview reveal">
-          <div class="project-screen">
-            <div class="screen-top">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-
-            <div class="screen-content">
-              <span class="project-label">Case em desenvolvimento</span>
-              <h3>Sua loja</h3>
-              <p>Veja como podemos transformar sua ideia em uma loja online funcional e moderna.</p>
-
-              <div class="screen-products">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-          </div>
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>Portfólio</span>
+          <h2>Projetos demonstrativos criados pela Loung Tech</h2>
+          <p>Modelos profissionais para apresentar nossa capacidade em sites, sistemas, APIs, e-commerces e automações.</p>
         </div>
 
-        <div class="project-info reveal">
-          <span class="badge">
-            <i class="fa-solid fa-rocket"></i>
-            Projeto em destaque
-          </span>
+        <div class="portfolio-grid">
+          <article class="portfolio-card reveal">
+            <div class="portfolio-mockup">🌐</div>
+            <span>Site institucional</span>
+            <h3>Clínica Vital</h3>
+            <p>Site moderno para clínica médica com especialidades, equipe e contato via WhatsApp.</p>
+            <div class="portfolio-techs">
+              <small>HTML</small><small>CSS</small><small>JavaScript</small>
+            </div>
+            <a href="/projetos/clinica-vital" class="btn-projeto">Ver Projeto →</a>
+          </article>
 
-          <h2>E-commerce Full Stack</h2>
+          <article class="portfolio-card reveal">
+            <div class="portfolio-mockup">🛒</div>
+            <span>E-commerce</span>
+            <h3>Urban Style</h3>
+            <p>Loja virtual de moda com visual comercial, vitrine de produtos e foco em conversão.</p>
+            <div class="portfolio-techs">
+              <small>HTML</small><small>CSS</small><small>JS</small>
+            </div>
+            <a href="/projetos/urban-style" class="btn-projeto">Ver Projeto →</a>
+          </article>
 
-          <p>
-            Nosso primeiro projeto é uma loja virtual completa, criada como uma operação real com produtos, usuários, autenticação,
-            banco de dados e painel administrativo.
-          </p>
+          <article class="portfolio-card reveal">
+            <div class="portfolio-mockup">⚙️</div>
+            <span>Sistema Web</span>
+            <h3>TaskFlow</h3>
+            <p>Dashboard estático para organização de tarefas, cards, gráficos e tabela de dados.</p>
+            <div class="portfolio-techs">
+              <small>HTML</small><small>CSS</small><small>Dashboard</small>
+            </div>
+            <a href="/projetos/taskflow" class="btn-projeto">Ver Projeto →</a>
+          </article>
 
-          <ul class="project-list">
-            <li><i class="fa-solid fa-check"></i> Front-end responsivo</li>
-            <li><i class="fa-solid fa-check"></i> Back-end com Node.js</li>
-            <li><i class="fa-solid fa-check"></i> API REST</li>
-            <li><i class="fa-solid fa-check"></i> Banco de dados MySQL</li>
-            <li><i class="fa-solid fa-check"></i> Login e autenticação</li>
-            <li><i class="fa-solid fa-check"></i> Upload de imagens</li>
-            <li><i class="fa-solid fa-check"></i> Painel administrativo</li>
-            <li><i class="fa-solid fa-check"></i> Carrinho de compras</li>
-          </ul>
+          <article class="portfolio-card reveal">
+            <div class="portfolio-mockup">📱</div>
+            <span>Landing Page</span>
+            <h3>Fit Academy</h3>
+            <p>Landing page para academia com benefícios, planos e chamada para matrícula.</p>
+            <div class="portfolio-techs">
+              <small>HTML</small><small>CSS</small><small>Responsivo</small>
+            </div>
+            <a href="/projetos/fit-academy" class="btn-projeto">Ver Projeto →</a>
+          </article>
+
+          <article class="portfolio-card reveal">
+            <div class="portfolio-mockup">🔗</div>
+            <span>API REST</span>
+            <h3>Finance API</h3>
+            <p>Página estilo documentação Swagger para endpoints financeiros e autenticação.</p>
+            <div class="portfolio-techs">
+              <small>JWT</small><small>MySQL</small><small>REST API</small>
+            </div>
+            <a href="/projetos/finance-api" class="btn-projeto">Ver Projeto →</a>
+          </article>
+
+          <article class="portfolio-card reveal">
+            <div class="portfolio-mockup">🤖</div>
+            <span>Automação</span>
+            <h3>AutoFlow</h3>
+            <p>Fluxo automatizado conectando Instagram, WhatsApp, CRM, e-mail e relatórios.</p>
+            <div class="portfolio-techs">
+              <small>Automação</small><small>CRM</small><small>Integração</small>
+            </div>
+            <a href="/projetos/autoflow" class="btn-projeto">Ver Projeto →</a>
+          </article>
         </div>
-
       </div>
     </section>
 
@@ -299,18 +325,59 @@
           <h2>Stack que usamos para construir soluções</h2>
         </div>
 
-        <div class="tech-grid">
-          <div class="tech-card reveal">HTML</div>
-          <div class="tech-card reveal">CSS</div>
-          <div class="tech-card reveal">JavaScript</div>
-          <div class="tech-card reveal">Node.js</div>
-          <div class="tech-card reveal">Express</div>
-          <div class="tech-card reveal">MySQL</div>
-          <div class="tech-card reveal">Firebase</div>
-          <div class="tech-card reveal">Python</div>
-          <div class="tech-card reveal">PHP</div>
-          <div class="tech-card reveal">APIs REST</div>
-        </div>
+       <div class="tech-grid">
+
+    <div class="tech-card reveal">
+        <i class="fa-brands fa-html5"></i>
+        HTML5
+    </div>
+
+    <div class="tech-card reveal">
+        <i class="fa-brands fa-css3-alt"></i>
+        CSS3
+    </div>
+
+    <div class="tech-card reveal">
+        <i class="fa-brands fa-js"></i>
+        JavaScript
+    </div>
+
+    <div class="tech-card reveal">
+        <i class="fa-brands fa-node-js"></i>
+        Node.js
+    </div>
+
+    <div class="tech-card reveal">
+        <i class="fa-solid fa-server"></i>
+        Express
+    </div>
+
+    <div class="tech-card reveal">
+        <i class="fa-solid fa-database"></i>
+        MySQL
+    </div>
+
+    <div class="tech-card reveal">
+        <i class="fa-solid fa-fire"></i>
+        Firebase
+    </div>
+
+    <div class="tech-card reveal">
+        <i class="fa-brands fa-python"></i>
+        Python
+    </div>
+
+    <div class="tech-card reveal">
+        <i class="fa-brands fa-php"></i>
+        PHP
+    </div>
+
+    <div class="tech-card reveal">
+        <i class="fa-solid fa-plug"></i>
+        APIs REST
+    </div>
+
+</div>
 
       </div>
     </section>
@@ -367,8 +434,8 @@
     <div class="container footer-content">
       <div>
         <a href="#" class="logo">
-            <img src="img/logo.jpeg" alt="Logo Loung Tech">
-                Loung Tech
+          <img src="img/logo.jpeg" alt="Logo Loung Tech">
+          Loung Tech
         </a>
 
         <p>Transformando ideias em soluções digitais.</p>
@@ -382,6 +449,7 @@
         <a href="https://www.instagram.com/loungtech.ti" target="_blank">
           Instagram
         </a>
+
         <a href="mailto:loungtech.ti@gmail.com">
           E-mail
         </a>
@@ -396,3 +464,4 @@
   <script src="js/script.js"></script>
 </body>
 </html>
+
