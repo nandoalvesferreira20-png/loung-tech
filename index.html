@@ -1,104 +1,88 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Loung Tech | Soluções Digitais Sob Medida</title>
+  <title>Loung Tech | Sites, Sistemas e Automações</title>
 
-  <meta name="description" content="A Loung Tech desenvolve sites, sistemas web, APIs, e-commerces e automações para empresas que querem crescer com tecnologia.">
+  <meta name="description" content="A Loung Tech desenvolve sites, sistemas web, automações, APIs e e-commerces sob medida para empresas que querem crescer com tecnologia.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body>
 
-  <header class="header" id="header">
-    <nav class="navbar container">
-      <a href="#" class="logo">
-        <img src="img/logo.jpeg" alt="Logo Loung Tech">
-        Loung Tech
-      </a>
+ <header class="header" id="header">
+  <nav class="navbar container">
+    <a href="#" class="logo">
+      <img src="img/logo.jpeg" alt="Logo Loung Tech">
+      <span>Loung Tech</span>
+    </a>
 
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#processo">Processo</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#tecnologias">Tecnologias</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#portfolio">Cases</a></li>
+      <li><a href="#processo">Processo</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
 
-      <a
-        href="https://wa.me/5511965973582"
-        target="_blank"
-        class="nav-button"
-      >
-        Orçamento
-      </a>
+    <a href="https://wa.me/5511965973582" target="_blank" class="nav-cta">
+      Solicitar orçamento
+    </a>
 
-      <button class="menu-button" id="menu-button">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </nav>
-  </header>
+    <button class="menu-button" id="menu-button" aria-label="Abrir menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+</header>
 
   <main>
 
-    <section class="hero section" id="inicio">
-      <div class="container hero-content">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
 
-        <div class="hero-text reveal">
-          <span class="badge">
+        <div class="hero-text">
+          <span class="hero-badge">
             <i class="fa-solid fa-bolt"></i>
-            Desenvolvimento Web Full Stack
+            Software sob medida para empresas
           </span>
 
           <h1>
-            Criamos sistemas que impulsionam empresas.
+            Desenvolvemos sistemas que fazem sua empresa crescer.
           </h1>
 
           <p>
-            A Loung Tech desenvolve sites, sistemas web, APIs, e-commerces
-            e automações sob medida para transformar ideias em soluções digitais reais.
+            Criamos sites, sistemas web, automações, APIs e e-commerces para empresas que querem vender mais, organizar processos e ganhar produtividade.
           </p>
 
-          <div class="hero-buttons">
-            <a
-              href="https://wa.me/5511965973582"
-              target="_blank"
-              class="btn btn-primary"
-            >
+          <div class="hero-actions">
+            <a href="https://wa.me/5511965973582" target="_blank" class="btn btn-primary">
               <i class="fa-brands fa-whatsapp"></i>
-              Solicitar orçamento
+              Falar no WhatsApp
             </a>
 
-            <a
-              href="https://www.instagram.com/loungtech.ti"
-              target="_blank"
-              class="btn btn-secondary"
-            >
-              <i class="fa-brands fa-instagram"></i>
-              Instagram
+            <a href="#portfolio" class="btn btn-secondary">
+              Ver projetos
             </a>
           </div>
 
-          <div class="hero-stats">
+          <div class="hero-metrics">
             <div>
               <strong>06+</strong>
-              <span>Projetos no portifólio</span>
+              <span>Projetos no portfólio</span>
+            </div>
+
+            <div>
+              <strong>100%</strong>
+              <span>Responsivo</span>
             </div>
 
             <div>
@@ -108,360 +92,441 @@
           </div>
         </div>
 
-        <div class="hero-image reveal">
-          <div class="mockup-card">
-            <div class="mockup-header">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-
-            <div class="mockup-body">
-              <div class="mockup-sidebar"></div>
-
-              <div class="mockup-main">
-                <span class="mockup-tag">Projetos digitais</span>
-                <h3>Web Solutions</h3>
-                <p>Sites, sistemas, APIs e automações para empresas modernas.</p>
-
-                <div class="mockup-grid">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-              </div>
+        <div class="hero-showcase">
+          <div class="showcase-card dashboard-card">
+            <span>Dashboard</span>
+            <h3>Sistema Web</h3>
+            <div class="fake-chart">
+              <div style="height: 45%"></div>
+              <div style="height: 70%"></div>
+              <div style="height: 55%"></div>
+              <div style="height: 85%"></div>
+              <div style="height: 60%"></div>
             </div>
           </div>
 
-          <div class="floating-card floating-card-one">
-            <i class="fa-solid fa-code"></i>
-            APIs
-          </div>
-
-          <div class="floating-card floating-card-two">
-            <i class="fa-solid fa-database"></i>
-            Banco de Dados
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section services" id="servicos">
-      <div class="container">
-
-        <div class="section-title reveal">
-          <span>Serviços</span>
-          <h2>Soluções digitais para o seu negócio</h2>
-          <p>
-            Desenvolvemos tecnologia com foco em performance, usabilidade
-            e resultado para empresas que querem crescer.
-          </p>
-        </div>
-
-        <div class="services-grid">
-          <article class="service-card reveal">
-            <i class="fa-solid fa-globe"></i>
-            <h3>Sites Institucionais</h3>
-            <p>Sites modernos, rápidos e responsivos para apresentar sua empresa com autoridade.</p>
-          </article>
-
-          <article class="service-card reveal">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <h3>E-commerce</h3>
-            <p>Lojas virtuais completas com produtos, carrinho, painel administrativo e integrações.</p>
-          </article>
-
-          <article class="service-card reveal">
-            <i class="fa-solid fa-laptop-code"></i>
-            <h3>Sistemas Web</h3>
-            <p>Sistemas sob medida para organizar processos, dados, clientes e operações.</p>
-          </article>
-
-          <article class="service-card reveal">
-            <i class="fa-solid fa-mobile-screen"></i>
-            <h3>Landing Pages</h3>
-            <p>Páginas de alta conversão para campanhas, serviços, produtos e captação de clientes.</p>
-          </article>
-
-          <article class="service-card reveal">
-            <i class="fa-solid fa-plug"></i>
-            <h3>APIs</h3>
-            <p>Back-ends e APIs REST para conectar sistemas, bancos de dados e aplicações.</p>
-          </article>
-
-          <article class="service-card reveal">
-            <i class="fa-solid fa-robot"></i>
-            <h3>Automações</h3>
-            <p>Automatizamos tarefas repetitivas para economizar tempo e reduzir erros operacionais.</p>
-          </article>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section process" id="processo">
-      <div class="container">
-
-        <div class="section-title reveal">
-          <span>Processo</span>
-          <h2>Da ideia ao sistema publicado</h2>
-          <p>Um fluxo simples, claro e pensado para entregar valor desde o primeiro contato.</p>
-        </div>
-
-        <div class="process-grid">
-          <div class="process-card reveal">
-            <span>01</span>
-            <h3>Ideia</h3>
-            <p>Entendemos sua necessidade, objetivo e o problema que precisa ser resolvido.</p>
-          </div>
-
-          <div class="process-card reveal">
-            <span>02</span>
-            <h3>Planejamento</h3>
-            <p>Definimos estrutura, funcionalidades, tecnologias e caminho de entrega.</p>
-          </div>
-
-          <div class="process-card reveal">
-            <span>03</span>
-            <h3>Desenvolvimento</h3>
-            <p>Criamos a solução com front-end, back-end, banco de dados e integrações.</p>
-          </div>
-
-          <div class="process-card reveal">
-            <span>04</span>
-            <h3>Entrega</h3>
-            <p>Publicamos o projeto, testamos as funcionalidades e ajustamos os detalhes finais.</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section portfolio" id="portfolio">
-      <div class="container">
-        <div class="section-title reveal">
-          <span>Portfólio</span>
-          <h2>Projetos demonstrativos criados pela Loung Tech</h2>
-          <p>Modelos profissionais para apresentar nossa capacidade em sites, sistemas, APIs, e-commerces e automações.</p>
-        </div>
-
-        <div class="portfolio-grid">
-          <article class="portfolio-card reveal">
-            <div class="portfolio-mockup">🌐</div>
-            <span>Site institucional</span>
-            <h3>Clínica Vital</h3>
-            <p>Site moderno para clínica médica com especialidades, equipe e contato via WhatsApp.</p>
-            <div class="portfolio-techs">
-              <small>HTML</small><small>CSS</small><small>JavaScript</small>
-            </div>
-            <a href="clinica-vital.html" class="btn-projeto">Ver Projeto →</a>
-          </article>
-
-          <article class="portfolio-card reveal">
-            <div class="portfolio-mockup">🛒</div>
-            <span>E-commerce</span>
-            <h3>Urban Style</h3>
-            <p>Loja virtual de moda com visual comercial, vitrine de produtos e foco em conversão.</p>
-            <div class="portfolio-techs">
-              <small>HTML</small><small>CSS</small><small>JS</small>
-            </div>
-            <a href="urban.html" class="btn-projeto">Ver Projeto →</a>
-          </article>
-
-          <article class="portfolio-card reveal">
-            <div class="portfolio-mockup">⚙️</div>
-            <span>Sistema Web</span>
-            <h3>TaskFlow</h3>
-            <p>Dashboard estático para organização de tarefas, cards, gráficos e tabela de dados.</p>
-            <div class="portfolio-techs">
-              <small>HTML</small><small>CSS</small><small>Dashboard</small>
-            </div>
-            <a href="taskflow.html" class="btn-projeto">Ver Projeto →</a>
-          </article>
-
-          <article class="portfolio-card reveal">
-            <div class="portfolio-mockup">📱</div>
+          <div class="showcase-card mobile-card">
             <span>Landing Page</span>
-            <h3>Fit Academy</h3>
-            <p>Landing page para academia com benefícios, planos e chamada para matrícula.</p>
-            <div class="portfolio-techs">
-              <small>HTML</small><small>CSS</small><small>Responsivo</small>
+            <h3>Mobile First</h3>
+            <div class="mobile-lines">
+              <i></i><i></i><i></i>
             </div>
-            <a href="fit-academy.html" class="btn-projeto">Ver Projeto →</a>
-          </article>
+          </div>
 
-          <article class="portfolio-card reveal">
-            <div class="portfolio-mockup">🔗</div>
+          <div class="showcase-card api-card">
             <span>API REST</span>
-            <h3>Finance API</h3>
-            <p>Página estilo documentação Swagger para endpoints financeiros e autenticação.</p>
-            <div class="portfolio-techs">
-              <small>JWT</small><small>MySQL</small><small>REST API</small>
-            </div>
-            <a href="finance-api.html" class="btn-projeto">Ver Projeto →</a>
-          </article>
+            <code>GET /projects</code>
+            <code>POST /clients</code>
+          </div>
 
-          <article class="portfolio-card reveal">
-            <div class="portfolio-mockup">🤖</div>
-            <span>Automação</span>
-            <h3>AutoFlow</h3>
-            <p>Fluxo automatizado conectando Instagram, WhatsApp, CRM, e-mail e relatórios.</p>
-            <div class="portfolio-techs">
-              <small>Automação</small><small>CRM</small><small>Integração</small>
-            </div>
-            <a href="autoflow.html" class="btn-projeto">Ver Projeto →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section technologies" id="tecnologias">
-      <div class="container">
-
-        <div class="section-title reveal">
-          <span>Tecnologias</span>
-          <h2>Stack que usamos para construir soluções</h2>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
         </div>
 
-       <div class="tech-grid">
-
-    <div class="tech-card reveal">
-        <i class="fa-brands fa-html5"></i>
-        HTML5
-    </div>
-
-    <div class="tech-card reveal">
-        <i class="fa-brands fa-css3-alt"></i>
-        CSS3
-    </div>
-
-    <div class="tech-card reveal">
-        <i class="fa-brands fa-js"></i>
-        JavaScript
-    </div>
-
-    <div class="tech-card reveal">
-        <i class="fa-brands fa-node-js"></i>
-        Node.js
-    </div>
-
-    <div class="tech-card reveal">
-        <i class="fa-solid fa-server"></i>
-        Express
-    </div>
-
-    <div class="tech-card reveal">
-        <i class="fa-solid fa-database"></i>
-        MySQL
-    </div>
-
-    <div class="tech-card reveal">
-        <i class="fa-solid fa-fire"></i>
-        Firebase
-    </div>
-
-    <div class="tech-card reveal">
-        <i class="fa-brands fa-python"></i>
-        Python
-    </div>
-
-    <div class="tech-card reveal">
-        <i class="fa-brands fa-php"></i>
-        PHP
-    </div>
-
-    <div class="tech-card reveal">
-        <i class="fa-solid fa-plug"></i>
-        APIs REST
-    </div>
-
-</div>
-
       </div>
     </section>
 
-    <section class="section about" id="sobre">
-      <div class="container about-content reveal">
-        <span>Sobre a Loung Tech</span>
+    <section class="section problems" id="problemas">
+  <div class="container">
+    <div class="section-title">
+      <span>Problemas que resolvemos</span>
+      <h2>Sua empresa ainda depende de processos manuais?</h2>
+      <p>Planilhas, retrabalho e falta de integração travam o crescimento. A Loung Tech transforma isso em software.</p>
+    </div>
 
-        <h2>
-          Tecnologia feita para resolver problemas reais.
-        </h2>
+    <div class="problems-grid">
+      <div class="problem-card">❌ Planilhas demais</div>
+      <div class="problem-card">❌ Atendimento desorganizado</div>
+      <div class="problem-card">❌ Processos manuais</div>
+      <div class="problem-card">❌ Site antigo</div>
+      <div class="problem-card">❌ Sistemas lentos</div>
+      <div class="problem-card">❌ Falta de integração</div>
+    </div>
+  </div>
+</section>
 
-        <p>
-          A Loung Tech nasceu com o objetivo de criar soluções digitais modernas,
-          acessíveis e eficientes. Atuamos no desenvolvimento de sites, sistemas,
-          APIs, e-commerces e automações para empresas que desejam profissionalizar
-          sua presença digital e melhorar seus processos.
-        </p>
+<section class="section solutions" id="servicos">
+  <div class="container">
+    <div class="section-title">
+      <span>Nossas soluções</span>
+      <h2>Tecnologia sob medida para sua operação</h2>
+      <p>Desenvolvemos soluções digitais para organizar, automatizar e escalar empresas.</p>
+    </div>
+
+    <div class="solutions-grid">
+      <article class="solution-card">
+        <i class="fa-solid fa-globe"></i>
+        <h3>Sites Institucionais</h3>
+        <p>Sites modernos para apresentar sua empresa com autoridade e gerar oportunidades.</p>
+      </article>
+
+      <article class="solution-card">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h3>E-commerce</h3>
+        <p>Lojas virtuais com vitrine, produtos, carrinho e estrutura para vendas online.</p>
+      </article>
+
+      <article class="solution-card">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h3>Sistemas Web</h3>
+        <p>Sistemas personalizados para controlar processos, clientes, dados e operações.</p>
+      </article>
+
+      <article class="solution-card">
+        <i class="fa-solid fa-robot"></i>
+        <h3>Automações</h3>
+        <p>Automatizamos tarefas repetitivas para reduzir erros e economizar tempo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section process-v2" id="processo">
+  <div class="container">
+    <div class="section-title">
+      <span>Como desenvolvemos</span>
+      <h2>Um processo claro do planejamento ao deploy</h2>
+      <p>Você acompanha cada etapa do projeto com transparência, organização e foco no resultado.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <span>01</span>
+        <h3>Descoberta</h3>
+        <p>Entendemos seu negócio, objetivo e problema principal.</p>
       </div>
-    </section>
 
-    <section class="section cta" id="contato">
-      <div class="container cta-content reveal">
-        <h2>Vamos construir juntos o próximo sistema da sua empresa?</h2>
+      <div class="timeline-item">
+        <span>02</span>
+        <h3>Protótipo</h3>
+        <p>Planejamos a estrutura e validamos a experiência antes do código.</p>
+      </div>
 
-        <p>
-          Fale com a Loung Tech e transforme sua ideia em uma solução digital profissional.
-        </p>
+      <div class="timeline-item">
+        <span>03</span>
+        <h3>Desenvolvimento</h3>
+        <p>Criamos front-end, back-end, integrações e banco de dados.</p>
+      </div>
 
-        <div class="cta-buttons">
-          <a
-            href="https://wa.me/5511965973582"
-            target="_blank"
-            class="btn btn-primary"
-          >
-            <i class="fa-brands fa-whatsapp"></i>
-            Chamar no WhatsApp
-          </a>
+      <div class="timeline-item">
+        <span>04</span>
+        <h3>Deploy</h3>
+        <p>Publicamos, testamos e deixamos tudo pronto para uso.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-          <a
-            href="mailto:loungtech.ti@gmail.com"
-            class="btn btn-secondary"
-          >
-            <i class="fa-solid fa-envelope"></i>
-            Enviar e-mail
-          </a>
+<section class="section portfolio-v2" id="portfolio">
+  <div class="container">
+    <div class="section-title">
+      <span>Portfólio</span>
+      <h2>Projetos criados para diferentes tipos de negócio</h2>
+      <p>Uma vitrine com sites, sistemas, APIs, landing pages, automações e e-commerce.</p>
+    </div>
+
+    <div class="portfolio-showcase">
+      <article class="case-card case-clinic">
+        <div class="case-preview">
+          <div class="case-window">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="case-screen">
+            <strong>Clínica Vital</strong>
+            <small>Saúde e atendimento</small>
+          </div>
         </div>
-      </div>
-    </section>
+
+        <div class="case-info">
+          <span>Site institucional</span>
+          <h3>Clínica Vital</h3>
+          <p>Site médico clean, responsivo e com foco em confiança e agendamento.</p>
+
+          <div class="case-techs">
+            <small>HTML</small>
+            <small>CSS</small>
+            <small>JavaScript</small>
+          </div>
+
+          <a href="clinica-vital.html">Ver projeto →</a>
+        </div>
+      </article>
+
+      <article class="case-card case-urban">
+        <div class="case-preview">
+          <div class="case-window">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="case-screen">
+            <strong>Urban Style</strong>
+            <small>E-commerce premium</small>
+          </div>
+        </div>
+
+        <div class="case-info">
+          <span>E-commerce</span>
+          <h3>Urban Style</h3>
+          <p>Loja virtual moderna com vitrine de produtos e identidade fashion premium.</p>
+
+          <div class="case-techs">
+            <small>HTML</small>
+            <small>CSS</small>
+            <small>UI</small>
+          </div>
+
+          <a href="urban.html">Ver projeto →</a>
+        </div>
+      </article>
+
+      <article class="case-card case-task">
+        <div class="case-preview">
+          <div class="case-window">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="case-screen">
+            <strong>TaskFlow</strong>
+            <small>Dashboard SaaS</small>
+          </div>
+        </div>
+
+        <div class="case-info">
+          <span>Sistema Web</span>
+          <h3>TaskFlow</h3>
+          <p>Dashboard estático com métricas, sidebar, gráficos e tabela de tarefas.</p>
+
+          <div class="case-techs">
+            <small>HTML</small>
+            <small>CSS</small>
+            <small>Dashboard</small>
+          </div>
+
+          <a href="taskflow.html">Ver projeto →</a>
+        </div>
+      </article>
+
+      <article class="case-card case-fit">
+        <div class="case-preview">
+          <div class="case-window">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="case-screen">
+            <strong>Fit Academy</strong>
+            <small>Landing Page</small>
+          </div>
+        </div>
+
+        <div class="case-info">
+          <span>Landing Page</span>
+          <h3>Fit Academy</h3>
+          <p>Página de alta conversão para academia, com benefícios, planos e CTA.</p>
+
+          <div class="case-techs">
+            <small>HTML</small>
+            <small>CSS</small>
+            <small>Responsivo</small>
+          </div>
+
+          <a href="fit-academy.html">Ver projeto →</a>
+        </div>
+      </article>
+
+      <article class="case-card case-api">
+        <div class="case-preview">
+          <div class="case-window">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="case-screen">
+            <strong>Finance API</strong>
+            <small>REST API Docs</small>
+          </div>
+        </div>
+
+        <div class="case-info">
+          <span>API REST</span>
+          <h3>Finance API</h3>
+          <p>Documentação visual de uma API financeira com endpoints e autenticação.</p>
+
+          <div class="case-techs">
+            <small>JWT</small>
+            <small>MySQL</small>
+            <small>REST</small>
+          </div>
+
+          <a href="finance-api.html">Ver projeto →</a>
+        </div>
+      </article>
+
+      <article class="case-card case-auto">
+        <div class="case-preview">
+          <div class="case-window">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="case-screen">
+            <strong>AutoFlow</strong>
+            <small>Automação</small>
+          </div>
+        </div>
+
+        <div class="case-info">
+          <span>Automação</span>
+          <h3>AutoFlow</h3>
+          <p>Fluxo visual conectando Instagram, WhatsApp, CRM, e-mail e relatórios.</p>
+
+          <div class="case-techs">
+            <small>CRM</small>
+            <small>Integração</small>
+            <small>Automação</small>
+          </div>
+
+          <a href="autoflow.html">Ver projeto →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section why-us" id="diferenciais">
+  <div class="container">
+    <div class="section-title">
+      <span>Por que escolher a Loung Tech?</span>
+      <h2>Não entregamos apenas telas bonitas. Entregamos soluções funcionais.</h2>
+      <p>Cada projeto é pensado para ser rápido, responsivo, escalável e alinhado ao objetivo do negócio.</p>
+    </div>
+
+    <div class="why-grid">
+      <article class="why-card"><i class="fa-solid fa-code"></i><h3>Código limpo</h3><p>Estrutura organizada para facilitar evolução e manutenção.</p></article>
+      <article class="why-card"><i class="fa-solid fa-gauge-high"></i><h3>Performance</h3><p>Sites rápidos, leves e preparados para uma boa experiência.</p></article>
+      <article class="why-card"><i class="fa-solid fa-mobile-screen"></i><h3>Responsivo</h3><p>Layout adaptado para celular, tablet e desktop.</p></article>
+      <article class="why-card"><i class="fa-solid fa-magnifying-glass-chart"></i><h3>SEO</h3><p>Base técnica preparada para melhor presença nos buscadores.</p></article>
+      <article class="why-card"><i class="fa-solid fa-database"></i><h3>Banco de dados</h3><p>Estruturas pensadas para armazenar e organizar informações.</p></article>
+      <article class="why-card"><i class="fa-solid fa-plug"></i><h3>Integrações</h3><p>Conectamos sistemas, APIs, automações e ferramentas externas.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section stack-v2" id="tecnologias">
+  <div class="container">
+    <div class="section-title">
+      <span>Tecnologias</span>
+      <h2>Stack usada para criar soluções modernas</h2>
+      <p>Trabalhamos com tecnologias para front-end, back-end, banco de dados e integrações.</p>
+    </div>
+
+    <div class="stack-grid">
+      <article class="stack-column">
+        <h3>Front-end</h3>
+        <div class="stack-list">
+          <span><i class="fa-brands fa-html5"></i> HTML5</span>
+          <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+          <span><i class="fa-brands fa-js"></i> JavaScript</span>
+        </div>
+      </article>
+
+      <article class="stack-column">
+        <h3>Back-end</h3>
+        <div class="stack-list">
+          <span><i class="fa-brands fa-node-js"></i> Node.js</span>
+          <span><i class="fa-solid fa-server"></i> Express.js</span>
+          <span><i class="fa-brands fa-php"></i> PHP</span>
+        </div>
+      </article>
+
+      <article class="stack-column">
+        <h3>Dados</h3>
+        <div class="stack-list">
+          <span><i class="fa-solid fa-database"></i> MySQL</span>
+          <span><i class="fa-solid fa-fire"></i> Firebase</span>
+          <span><i class="fa-brands fa-python"></i> Python</span>
+        </div>
+      </article>
+
+      <article class="stack-column">
+        <h3>Integrações</h3>
+        <div class="stack-list">
+          <span><i class="fa-solid fa-plug"></i> REST APIs</span>
+          <span><i class="fa-brands fa-whatsapp"></i> WhatsApp</span>
+          <span><i class="fa-solid fa-robot"></i> Automações</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="section-title">
+      <span>Dúvidas frequentes</span>
+      <h2>Antes de solicitar um orçamento</h2>
+      <p>Algumas respostas rápidas para facilitar o primeiro contato.</p>
+    </div>
+
+    <div class="faq-list">
+      <details>
+        <summary>Quanto custa um site ou sistema?</summary>
+        <p>Depende do escopo, quantidade de páginas, funcionalidades e integrações. O orçamento é feito sob medida.</p>
+      </details>
+
+      <details>
+        <summary>Quanto tempo demora para desenvolver?</summary>
+        <p>Landing pages simples podem ser mais rápidas. Sistemas completos exigem planejamento, desenvolvimento, testes e deploy.</p>
+      </details>
+
+      <details>
+        <summary>Vocês fazem manutenção?</summary>
+        <p>Sim. Podemos oferecer suporte, ajustes, melhorias e evolução contínua após a entrega.</p>
+      </details>
+
+      <details>
+        <summary>O site funciona no celular?</summary>
+        <p>Sim. Todos os projetos são desenvolvidos com foco em responsividade para celular, tablet e desktop.</p>
+      </details>
+
+      <details>
+        <summary>Vocês fazem automações?</summary>
+        <p>Sim. Criamos automações para atendimento, organização de leads, processos internos e integrações entre ferramentas.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section final-cta" id="contato">
+  <div class="container final-cta-box">
+    <span>Vamos começar?</span>
+    <h2>Pronto para transformar sua ideia em uma solução digital?</h2>
+    <p>Fale com a Loung Tech e vamos entender como a tecnologia pode ajudar sua empresa a crescer.</p>
+
+    <a href="https://wa.me/5511965973582" target="_blank" class="btn btn-primary">
+      <i class="fa-brands fa-whatsapp"></i>
+      Solicitar orçamento
+    </a>
+  </div>
+</section>
 
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="contato">
     <div class="container footer-content">
       <div>
         <a href="#" class="logo">
           <img src="img/logo.jpeg" alt="Logo Loung Tech">
-          Loung Tech
+          <span>Loung Tech</span>
         </a>
 
-        <p>Transformando ideias em soluções digitais.</p>
+        <p>Sites, sistemas e automações para empresas que querem crescer.</p>
       </div>
 
       <div class="footer-links">
-        <a href="https://wa.me/5511965973582" target="_blank">
-          WhatsApp
-        </a>
-
-        <a href="https://www.instagram.com/loungtech.ti" target="_blank">
-          Instagram
-        </a>
-
-        <a href="mailto:loungtech.ti@gmail.com">
-          E-mail
-        </a>
+        <a href="https://wa.me/5511965973582" target="_blank">WhatsApp</a>
+        <a href="https://www.instagram.com/loungtech.ti" target="_blank">Instagram</a>
+        <a href="mailto:loungtech.ti@gmail.com">E-mail</a>
       </div>
     </div>
   </footer>
+<button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
 
-  <button class="back-to-top" id="back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-  </button>
+<script src="js/script.js"></script>
 
-  <script src="js/script.js"></script>
 </body>
 </html>
-

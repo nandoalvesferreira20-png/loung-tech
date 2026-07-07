@@ -2,61 +2,55 @@ const header = document.getElementById("header");
 const menuButton = document.getElementById("menu-button");
 const navMenu = document.getElementById("nav-menu");
 const backToTop = document.getElementById("back-to-top");
-const revealElements = document.querySelectorAll(".reveal");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 40) {
-    header.classList.add("scrolled");
-    backToTop.classList.add("active");
-  } else {
-    header.classList.remove("scrolled");
-    backToTop.classList.remove("active");
-  }
-
-  revealOnScroll();
+  header.classList.toggle("scrolled", window.scrollY > 20);
+  backToTop.classList.toggle("active", window.scrollY > 500);
 });
 
 menuButton.addEventListener("click", () => {
   navMenu.classList.toggle("active");
-
-  const icon = menuButton.querySelector("i");
-
-  if (navMenu.classList.contains("active")) {
-    icon.classList.remove("fa-bars");
-    icon.classList.add("fa-xmark");
-  } else {
-    icon.classList.remove("fa-xmark");
-    icon.classList.add("fa-bars");
-  }
+  menuButton.classList.toggle("active");
 });
 
 document.querySelectorAll(".nav-menu a").forEach((link) => {
   link.addEventListener("click", () => {
     navMenu.classList.remove("active");
-
-    const icon = menuButton.querySelector("i");
-    icon.classList.remove("fa-xmark");
-    icon.classList.add("fa-bars");
+    menuButton.classList.remove("active");
   });
 });
 
 backToTop.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth",
+    behavior: "smooth"
   });
 });
 
-function revealOnScroll() {
-  revealElements.forEach((element) => {
-    const windowHeight = window.innerHeight;
-    const elementTop = element.getBoundingClientRect().top;
-    const revealPoint = 120;
+const revealElements = document.querySelectorAll(
+  ".section-title, .problem-card, .solution-card, .timeline-item, .case-card, .why-card, .stack-column, .faq details, .final-cta-box"
+);
 
-    if (elementTop < windowHeight - revealPoint) {
-      element.classList.add("active");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
     }
   });
-}
+}, {
+  threshold: 0.12
+});
 
-revealOnScroll();
+revealElements.forEach((element) => {
+  element.classList.add("reveal");
+  observer.observe(element);
+});
+
+document.querySelectorAll(".solution-card, .case-card, .why-card, .stack-column").forEach((card) => {
+  card.addEventListener("mousemove", (event) => {
+    const rect = card.getBoundingClientRect();
+
+    card.style.setProperty("--x", `${event.clientX - rect.left}px`);
+    card.style.setProperty("--y", `${event.clientY - rect.top}px`);
+  });
+});
