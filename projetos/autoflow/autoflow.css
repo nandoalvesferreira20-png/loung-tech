@@ -1,0 +1,44 @@
+:root { --accent:#7351c4; --muted:#6b6480; --surface:#fff; --line:#e1dced; --focus:#7351c4; }
+body { background:#faf9fd; color:#272036; }
+.brand { font-size:27px; }
+.brand>span { display:inline-grid; place-items:center; width:34px; height:34px; background:#7955cb; color:white; border-radius:9px; margin-right:6px; font-size:25px; }
+.automation-hero { text-align:center; padding:54px 0 44px; position:relative; }
+.automation-hero h1 { font-size:clamp(48px,5.8vw,72px); letter-spacing:-3.5px; font-weight:650; margin:20px 0; }
+.automation-hero h1 em { font-style:normal; color:var(--accent); }
+.automation-hero>p { font-size:16px; }
+.automation-hero .actions { justify-content:center; margin-top:25px; }
+.mini-flow { display:flex; align-items:center; justify-content:center; gap:20px; margin:35px 0 0; }
+.mini-flow span { padding:12px 22px; border:1px solid var(--line); border-radius:8px; background:#fff; font-size:11px; box-shadow:0 8px 24px #52428308; }
+.mini-flow b { color:#b5a5d4; font-weight:normal; }
+.flow-section { padding:35px 0 60px; }
+.flow-section .section-head h2 { font-size:30px; }
+.flow-app { border:1px solid #d6cce7; border-radius:12px; overflow:hidden; box-shadow:0 20px 65px #77648c0b; }
+.flow-toolbar { display:flex; align-items:end; justify-content:space-between; flex-wrap:wrap; gap:18px; padding:20px 24px; background:white; border-bottom:1px solid var(--line); }
+.flow-toolbar label { font-size:10px; min-width:235px; }
+.flow-toolbar select { font-size:12px; }
+.flow-toolbar .button { font-size:11px; padding:10px 14px; }
+.flow-canvas { padding:24px; background-color:#f3f0f9; background-image:radial-gradient(#d4cee3 1px,transparent 1px); background-size:17px 17px; }
+.canvas-label { display:flex; align-items:center; justify-content:space-between; gap:12px; color:#786b8e; font-size:9px; letter-spacing:1px; }
+.flow-nodes { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:24px; list-style:none; padding:0; margin:38px 0; }
+.flow-node { position:relative; border:1px solid #d4cce2; border-radius:10px; padding:22px 18px; background:#fff; box-shadow:0 5px 12px #31225106; min-width:0; }
+.flow-node:not(:last-child)::after { content:'→'; position:absolute; right:-21px; top:45%; color:#a88fc7; }
+.node-icon { display:grid; place-items:center; width:38px; height:38px; border-radius:10px; background:#eee7fb; color:var(--accent); font-size:20px; }
+.flow-node h3 { font-size:14px; margin:18px 0 8px; }
+.flow-node p { font-size:11px; margin:0; }
+.node-state { display:block; margin-top:16px; font-size:9px; color:#786c89; }
+.flow-node.complete { border-color:#89bda5; background:#f8fffb; }
+.flow-node.complete .node-state { color:#257044; }
+.flow-node.current { border:2px solid #875bcc; padding:21px 17px; box-shadow:0 0 0 5px #a176df15; }
+.flow-summary { display:flex; align-items:center; flex-wrap:wrap; justify-content:space-between; gap:12px; background:#fffc; border:1px solid var(--line); padding:12px 18px; border-radius:7px; }
+.flow-summary p { margin:0; font-size:11px; }
+.execution-log { display:grid; grid-template-columns:1fr 2fr; gap:30px; padding:24px; background:white; }
+.execution-log h3 { font-size:14px; }
+.execution-log p { font-size:11px; margin:0; }
+.execution-log ol { padding:0; margin:0; list-style:none; font:11px/2 monospace; color:#655b77; }
+.auto-icon { display:grid; place-items:center; width:44px; height:44px; border:1px solid var(--line); border-radius:10px; color:var(--accent); font-size:24px; margin-bottom:25px; }
+.grid-3 h3 { font-size:20px; }
+.grid-3 p { font-size:13px; }
+.automation-faq { max-width:800px; }
+.automation-faq h2 { font-size:36px; }
+@media(max-width:850px) { .flow-nodes { grid-template-columns:repeat(2,minmax(0,1fr)); } .flow-node::after { display:none; } }
+@media(max-width:600px) { .automation-hero { padding-top:36px; } .automation-hero h1 { font-size:46px; letter-spacing:-2px; } .automation-hero>p { font-size:14px; } .mini-flow { gap:6px; } .mini-flow span { padding:10px; font-size:9px; } .mini-flow b { display:none; } .flow-toolbar,.flow-canvas,.execution-log { padding:18px; } .flow-toolbar label { min-width:0; width:100%; } .flow-toolbar .actions { gap:8px; } .flow-nodes { grid-template-columns:1fr; gap:15px; margin:24px 0; } .execution-log { grid-template-columns:1fr; gap:18px; } .flow-section .section-head h2 { font-size:29px; } }

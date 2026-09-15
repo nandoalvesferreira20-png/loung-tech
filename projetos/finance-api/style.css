@@ -1,0 +1,50 @@
+:root { --accent:#6edec1; --on-accent:#10251f; --muted:#9daab8; --line:#283746; --surface:#13202c; --focus:#80edcf; }
+body { background:#0b141d; color:#e5edf4; }
+.brand { font-size:22px; letter-spacing:-.6px; }
+.brand>span { color:var(--accent); margin-right:10px; font-family:monospace; }
+.version { font:10px monospace; color:var(--accent); border:1px solid #315d52; background:#162c27; padding:5px 10px; border-radius:4px; }
+.docs-layout { display:grid; grid-template-columns:190px minmax(0,1fr); gap:46px; }
+.docs-sidebar { padding:36px 0; border-right:1px solid var(--line); }
+.docs-sidebar>a,.docs-sidebar>button { display:block; padding:10px 14px 10px 0; font-size:12px; color:var(--muted); background:transparent; border:0; text-align:left; }
+.docs-sidebar>button b { color:var(--accent); font:9px monospace; padding-right:8px; }
+.docs-sidebar .eyebrow { font-size:9px; margin:0 0 12px; }
+.resource-label { margin-top:30px!important; }
+.local-badge { padding-top:40px; font-size:11px; color:var(--accent); }
+.local-badge small { color:var(--muted); font-size:9px; }
+.docs-main { min-width:0; padding-top:42px; }
+.docs-intro h1 { font-size:48px; font-weight:550; letter-spacing:-2px; margin-bottom:22px; }
+.docs-intro>p { font-size:14px; max-width:620px; }
+.api-note { display:flex; gap:14px; padding:16px; background:#142820; border:1px solid #2b5146; border-radius:6px; margin:24px 0 38px; }
+.api-note>span { color:var(--accent); font:20px Georgia,serif; }
+.api-note p { font-size:11px; margin:0; color:#b6cabe; }
+.api-note strong { color:#d2eee0; }
+#explorador .section-head h2 { font-size:22px; }
+#explorador .section-head { align-items:center; margin-bottom:20px; }
+.endpoint-tabs { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px; }
+.endpoint-tabs button { border:1px solid var(--line); border-radius:5px; padding:8px 14px; background:transparent; color:#aabcca; font:11px monospace; }
+.endpoint-tabs button[aria-pressed=true] { color:#8aeacb; border-color:#407767; background:#153329; }
+.api-workbench { display:grid; grid-template-columns:1.1fr 1fr; border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+.request-panel,.response-panel { padding:22px; min-width:0; }
+.response-panel { background:#08111a; border-left:1px solid var(--line); }
+.panel-heading { display:flex; align-items:center; justify-content:space-between; gap:15px; font:9px monospace; color:var(--muted); margin-bottom:18px; }
+.method { color:var(--accent); }
+#endpoint-path { font:20px monospace; }
+#endpoint-description { font-size:12px; }
+.api-workbench label { font-size:10px; }
+.api-workbench select { font-size:11px; }
+.api-workbench .form-grid { gap:10px; }
+#body-label { margin-top:18px; }
+#request-body { font:12px/1.7 monospace; }
+.code-heading { display:flex; align-items:center; justify-content:space-between; gap:10px; font-size:10px; margin-top:20px; }
+.copy-button { color:var(--accent); border:1px solid var(--line); background:transparent; padding:7px 10px; border-radius:5px; font-size:10px; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; word-break:break-word; font:11px/1.8 Consolas,monospace; color:#bcdccc; background:#08111a; border-radius:6px; padding:16px; min-width:0; }
+#response-output { padding:0; min-height:230px; }
+#response-code { color:var(--accent); }
+.response-docs { padding:50px 0; }
+.response-docs h2 { font-size:25px; }
+.response-codes { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+.response-codes>div { border-top:1px solid var(--line); padding-top:18px; }
+.response-codes b { font:12px monospace; color:var(--accent); }
+.response-codes p { font-size:11px; margin-top:12px; }
+@media(max-width:1000px) { .docs-layout { grid-template-columns:150px minmax(0,1fr); gap:26px; } .api-workbench { grid-template-columns:1fr; } .response-panel { border-left:0; border-top:1px solid var(--line); } }
+@media(max-width:640px) { .docs-layout { grid-template-columns:1fr; gap:0; } .docs-sidebar { display:none; } .docs-main { padding-top:32px; } .docs-intro h1 { font-size:37px; } .request-panel,.response-panel { padding:18px; } .response-codes { grid-template-columns:1fr; } .api-workbench .form-grid { grid-template-columns:1fr; } }

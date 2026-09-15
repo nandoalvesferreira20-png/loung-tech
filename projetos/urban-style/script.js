@@ -17,7 +17,7 @@ function renderProducts() {
   let visible = products.filter(p => category === 'all' || p.category === category);
   const sort = document.getElementById('sort').value;
   if (sort !== 'default') visible.sort((a,b) => sort === 'price-up' ? a.price-b.price : b.price-a.price);
-  document.getElementById('product-count').textContent = visible.length + ' produtos nesta seleção';
+  document.getElementById('product-count').textContent = visible.length + (visible.length === 1 ? ' produto nesta seleção' : ' produtos nesta seleção');
   shop.innerHTML = visible.map(p => `<article class="product-card"><div class="product-image"><img src="../assets/${p.image}" width="600" height="750" alt="${p.alt}" loading="lazy"><span>IMAGEM ILUSTRATIVA</span></div><span class="product-category">${p.category}</span><h3>${p.name}</h3><p>${Demo.money(p.price)}</p><label>Tamanho — ${p.name}<select id="size-${p.id}">${p.sizes.map(s=>`<option>${s}</option>`).join('')}</select></label><button class="button" data-add="${p.id}" aria-label="Adicionar ${p.name} à sacola">Adicionar à sacola +</button></article>`).join('');
 }
 function renderCart() {

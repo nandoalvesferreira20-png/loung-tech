@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta name="description" content="TaskFlow: demonstração interativa criada pela Loung Tech. Conteúdo ilustrativo, sem operações reais.">
+  <title>TaskFlow — Demonstração | Loung Tech</title>
+  <link rel="icon" href="../../img/logo.jpeg">
+  <link rel="stylesheet" href="../demo.css?v=3">
+  <link rel="stylesheet" href="style.css?v=3">
+  <script src="../demo.js?v=3" defer></script>
+  <script src="script.js?v=3" defer></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <div class="demo-notice"><span><b>DEMONSTRAÇÃO LOUNG TECH</b> · Dados e ações ilustrativos</span><a href="../../index.html#portfolio">← Voltar ao portfólio</a></div>
+
+  <div class="workspace"><aside class="sidebar"><a class="brand" href="#conteudo"><span>▧</span> taskflow</a><span class="workspace-label">ESPAÇO DE DEMONSTRAÇÃO</span><nav aria-label="Navegação do painel"><a class="selected" href="#quadro">▦ &nbsp; Quadro de tarefas</a><a href="#visao">◷ &nbsp; Visão geral</a><a href="#ajuda">? &nbsp; Como experimentar</a></nav><div class="sidebar-bottom"><span class="workspace-avatar">LT</span><div><strong>Loung Tech</strong><small>Ambiente demonstrativo</small></div></div></aside>
+  <main id="conteudo" class="task-main" tabindex="-1"><header class="task-header"><span>Workspace <span class="breadcrumb">/ Projetos / Website</span></span><span class="pill">Salvo neste navegador</span></header><section id="visao"><div class="task-title"><div><span class="eyebrow">CADA PASSO, MAIS CLAREZA</span><h1>Vamos tirar as ideias do papel.</h1><p>Organize o trabalho, acompanhe as etapas e veja o que vem a seguir.</p></div><button class="button" id="new-task">+ Nova tarefa</button></div><div class="task-metrics"><div><span>Total de tarefas</span><strong id="metric-total">0</strong></div><div><span>Em andamento</span><strong id="metric-doing">0</strong></div><div><span>Concluídas</span><strong id="metric-done">0</strong></div><div><span>Progresso do quadro</span><strong id="metric-progress">0%</strong><progress id="progress" max="100" value="0" aria-label="Progresso das tarefas"></progress></div></div></section>
+    <section id="quadro"><div class="board-heading"><div><h2>Projeto Website</h2><p class="hint">Tarefas e responsáveis fictícios · Edite para experimentar.</p></div><button class="button secondary small" id="restore">Restaurar exemplos</button></div><div class="task-filters"><label>Buscar tarefa<input id="search" type="search" placeholder="Buscar pelo título…"></label><label>Prioridade<select id="priority-filter"><option value="all">Todas</option><option>Alta</option><option>Média</option><option>Baixa</option></select></label><label>Responsável<select id="owner-filter"><option value="all">Todos</option><option>Ana</option><option>Lucas</option><option>Equipe</option></select></label><button class="button secondary small" id="clear-filters">Limpar filtros</button></div><p id="filter-status" class="hint" role="status"></p><div class="board" id="board"></div></section>
+    <section class="task-help" id="ajuda"><h2>Um quadro para experimentar.</h2><p>Crie ou edite uma tarefa e use “Mover para” para mudar sua etapa. As alterações ficam somente neste navegador. “Restaurar exemplos” recupera o quadro inicial. Nenhuma conta ou equipe real está conectada.</p></section>
+  </main></div>
+  <dialog id="task-dialog" aria-labelledby="task-dialog-title"><div class="dialog-head"><h2 id="task-dialog-title">Nova tarefa</h2><button class="close" data-close aria-label="Fechar tarefa">×</button></div><form id="task-form"><label>Título da tarefa<input id="task-title" required maxlength="90" placeholder="Ex.: Revisar página de serviços"></label><div class="form-grid"><label>Responsável fictício<select id="task-owner"><option>Ana</option><option>Lucas</option><option>Equipe</option></select></label><label>Prioridade<select id="task-priority"><option>Média</option><option>Alta</option><option>Baixa</option></select></label></div><label>Etapa<select id="task-stage"><option value="todo">A fazer</option><option value="doing">Em andamento</option><option value="done">Concluído</option></select></label><div class="actions"><button class="button" type="submit">Salvar tarefa</button><button class="button secondary" id="delete-task" type="button" hidden>Excluir tarefa</button></div><p class="hint">Use apenas dados de exemplo nesta demonstração.</p></form></dialog>
+  <dialog id="restore-dialog" aria-labelledby="restore-title"><div class="dialog-head"><h2 id="restore-title">Restaurar o quadro?</h2><button class="close" data-close aria-label="Fechar restauração">×</button></div><p>As tarefas desta demonstração serão substituídas pelos seis exemplos iniciais.</p><button class="button" id="confirm-restore">Restaurar exemplos agora</button></dialog>
+
+  <footer class="site-footer"><div class="wrap"><p>TaskFlow · Projeto demonstrativo da Loung Tech.</p><a href="../../index.html#portfolio">Voltar ao portfólio</a><a href="https://wa.me/5511965973582" target="_blank" rel="noopener noreferrer">Quero um projeto assim · Falar com a Loung Tech ↗</a></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="wrap">Ative o JavaScript para experimentar as interações desta demonstração.</p></noscript>
+</body>
+</html>

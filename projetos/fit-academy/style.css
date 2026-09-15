@@ -1,0 +1,44 @@
+:root { --accent:#d4fa42; --on-accent:#14180c; --muted:#aeb2a5; --line:#353a2f; --surface:#181c16; --focus:#d4fa42; }
+body { background:#10130e; color:#f4f6ec; }
+.brand { font-weight:900; font-style:italic; font-size:22px; }
+.brand span { color:var(--accent); }
+.button { border-radius:2px; font-weight:750; }
+.fit-hero { position:relative; background:#1a211b; overflow:hidden; }
+.fit-hero>img { position:absolute; inset:0; width:100%; height:100%; object-position:center; }
+.fit-hero::after { content:''; position:absolute; inset:0; background:linear-gradient(90deg,#0a100df2,#10141095 60%,#10141030); }
+.fit-hero-content { position:relative; z-index:1; padding-block:58px; }
+.fit-hero h1 { font-size:clamp(52px,6.5vw,86px); line-height:.97; letter-spacing:-4px; font-weight:900; margin-bottom:26px; }
+.fit-hero h1 em { font-style:italic; color:var(--accent); }
+.fit-hero p { color:#d4d8cb; font-size:15px; }
+.photo-note { display:block; font-size:9px; color:#b4bbae; margin-top:30px; }
+.fit-ticker { display:flex; flex-wrap:wrap; justify-content:space-around; gap:16px; padding:20px; background:var(--accent); color:#1c2411; font-weight:850; font-size:15px; letter-spacing:1px; }
+.section-head h2 { font-size:40px; font-style:italic; font-weight:850; }
+.card { border-radius:3px; }
+.fit-number { display:block; font-size:30px; color:#84925d; font-style:italic; margin-bottom:35px; }
+.card h3 { font-size:24px; }
+.card p { font-size:14px; }
+.plans-section { background:#181c15; border-block:1px solid var(--line); }
+.plan { display:flex; flex-direction:column; padding:28px; background:#11150e; }
+.plan .eyebrow { font-size:8px; letter-spacing:1px; color:#b0b89f; }
+.plan.featured { border-color:#c6e64d; background:#242d18; }
+.plan .price { font-size:40px; color:white; font-weight:750; margin:18px 0 8px; }
+.price span { font-size:12px; font-weight:400; color:var(--muted); }
+.plan .plan-term { font-size:11px; }
+.plan ul { list-style:none; margin:20px 0 28px; padding:0; font-size:12px; }
+.plan li { padding:12px 0; border-bottom:1px solid var(--line); }
+.plan li::before { content:'✓'; color:var(--accent); margin-right:10px; }
+.plan .button { margin-top:auto; }
+.fit-faq { display:grid; grid-template-columns:1fr 1fr; gap:70px; }
+.fit-faq h2 { font-size:44px; font-style:italic; }
+#plan-summary { padding:20px; background:#242d18; border:1px solid var(--line); margin:20px 0; }
+#plan-summary strong { font-size:26px; }
+#plan-summary p { margin:10px 0 0; }
+@media(max-width:760px) { .fit-hero-content { padding-block:42px; } .fit-hero h1 { font-size:57px; letter-spacing:-3px; } .fit-hero>img { object-position:65% center; } .fit-faq { grid-template-columns:1fr; gap:20px; } .fit-ticker { font-size:10px; gap:10px; } .fit-ticker b { display:none; } .section-head h2 { font-size:34px; } }
+@media(max-width:360px) { .fit-hero h1 { font-size:48px; } }
+/* Keep long headings inside narrow phones. */
+@media(max-width: 760px) {
+ .fit-hero h1 { font-size: clamp(40px, 11.8vw, 57px); }
+ .fit-hero h1 em { white-space: nowrap; }
+ .section-head > div { min-width: 0; max-width: 100%; }
+ .section-head h2 { font-size: clamp(27px, 7.5vw, 34px); overflow-wrap: break-word; }
+}
