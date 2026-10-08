@@ -1,0 +1,94 @@
+{
+  "required": [
+    "id",
+    "company_name",
+    "contact_name",
+    "service_type",
+    "description",
+    "email",
+    "phone",
+    "status",
+    "source",
+    "consent_at",
+    "privacy_policy_version",
+    "notification_status",
+    "created_at"
+  ],
+  "properties": {
+    "id": {
+      "default": "gen_random_uuid()",
+      "description": "Note:\nThis is a Primary Key.<pk/>",
+      "format": "uuid",
+      "type": "string"
+    },
+    "company_name": {
+      "format": "text",
+      "type": "string"
+    },
+    "contact_name": {
+      "format": "text",
+      "type": "string"
+    },
+    "service_type": {
+      "format": "text",
+      "type": "string"
+    },
+    "description": {
+      "format": "text",
+      "type": "string"
+    },
+    "email": {
+      "format": "text",
+      "type": "string"
+    },
+    "phone": {
+      "format": "text",
+      "type": "string"
+    },
+    "status": {
+      "default": "novo",
+      "format": "text",
+      "type": "string"
+    },
+    "source": {
+      "default": "site",
+      "format": "text",
+      "type": "string"
+    },
+    "utm_source": {
+      "format": "text",
+      "type": "string"
+    },
+    "utm_medium": {
+      "format": "text",
+      "type": "string"
+    },
+    "utm_campaign": {
+      "format": "text",
+      "type": "string"
+    },
+    "consent_at": {
+      "format": "timestamp with time zone",
+      "type": "string"
+    },
+    "privacy_policy_version": {
+      "format": "text",
+      "type": "string"
+    },
+    "notification_status": {
+      "default": "pendente",
+      "format": "text",
+      "type": "string"
+    },
+    "notified_at": {
+      "format": "timestamp with time zone",
+      "type": "string"
+    },
+    "created_at": {
+      "default": "now()",
+      "format": "timestamp with time zone",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

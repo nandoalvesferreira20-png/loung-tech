@@ -1,0 +1,8 @@
+# Public visitor endpoint only. Security is enforced inside its handler.
+[functions.submit-lead]
+verify_jwt = false
+
+# Worker uses platform JWT verification AND a separate private worker secret.
+# Call with the legacy service-role JWT in Authorization; never from the browser.
+[functions.retry-lead-notifications]
+verify_jwt = true

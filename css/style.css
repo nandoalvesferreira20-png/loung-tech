@@ -529,3 +529,47 @@ a:hover {
 .demo-heading { margin-top: 56px; border-top: 1px solid var(--border); padding-top: 30px; }
 .real-tag { color: #c6f4dc !important; background: #113326; border-color: #4c8d72; }
 @media(max-width: 620px) { .real-projects { grid-template-columns: 1fr; } }
+
+/* Refinements limited to the real-project portfolio. */
+#portfolio .portfolio-card {
+  transition: border-color .2s ease, transform .2s ease;
+}
+#portfolio .portfolio-card:focus-within {
+  border-color: var(--blue-2);
+}
+#portfolio .project-highlights {
+  margin: -4px 0 22px;
+  padding-left: 18px;
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.8;
+  list-style: disc;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  #portfolio .portfolio-card:hover {
+    transform: translateY(-3px);
+    border-color: #47648a;
+  }
+}
+
+/* Commercial copy: keep longer benefit headings and contact actions readable. */
+.service-label {
+  display: block;
+  color: var(--blue-2);
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.hero h1 {
+  font-size: clamp(34px, 3.2vw, 44px);
+  letter-spacing: -1.3px;
+}
+.hero-content > * { min-width: 0; }
+.service-card h3 { line-height: 1.45; }
+.cta .contact-note { font-size: 12px; color: var(--muted); }
+
+.service-card { display: flex; flex-direction: column; }
+.service-card > i { flex-shrink: 0; }
+.service-link { margin-top: auto; padding-top: 20px; display: flex; justify-content: space-between; gap: 10px; color: #a7ceff; font-size: 12px; min-height: 44px; }
+.footer-links { flex-wrap: wrap; }
+.cta .contact-note a { color: #a7ceff; text-decoration: underline; text-underline-offset: 3px; }

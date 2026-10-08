@@ -1,0 +1,10 @@
+.env
+.env.*
+.git/
+.local/
+supabase/
+docs/
+tests/
+tools/
+preview/
+node_modules/

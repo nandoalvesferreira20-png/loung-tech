@@ -5,7 +5,7 @@ from urllib.parse import unquote, urlsplit
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-PAGES = [ROOT / 'index.html', *sorted((ROOT / 'projetos').glob('*/index.html'))]
+PAGES = [ROOT / 'index.html', ROOT / 'orcamento/index.html', ROOT / 'privacidade/index.html', *sorted((ROOT / 'projetos').glob('*/index.html'))]
 
 
 class Page(HTMLParser):
@@ -53,5 +53,9 @@ for contact in ['https://wa.me/5511965973582', 'https://www.instagram.com/loungt
     assert contact in main, f'Missing contact: {contact}'
 for site in ['https://site-rafael-munhoz.vercel.app/', 'https://dragabriellabarros.vercel.app/']:
     assert site in main, f'Missing real project: {site}'
-assert len(PAGES) == 7
-print('PASS: seven pages, contacts, real projects, and merge-conflict checks')
+assert len(PAGES) == 9
+assert main.count('class="portfolio-card"') == 5
+for site in ['https://central-jotape.vercel.app/', 'https://casa-naturaleh.vercel.app/', 'https://bela-y-essencia.vercel.app/']:
+    assert site in main
+assert '/orcamento' in main and '/privacidade' in main
+print('PASS: nine pages, five real projects, budget/privacy routes, contacts and merge-conflict checks')

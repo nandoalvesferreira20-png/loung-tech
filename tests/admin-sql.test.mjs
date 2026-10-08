@@ -1,0 +1,42 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {PGlite} from '../.local/node_modules/@electric-sql/pglite/dist/index.js';
+test('admin RLS: autorização, coluna de status, grants antigos e backend preservado',async()=>{
+ const db=new PGlite();
+ try {
+  await db.exec(`create role anon; create role authenticated; create role service_role bypassrls;
+    create schema auth; create table auth.users(id uuid primary key);
+    create function auth.uid() returns uuid language sql stable as $$ select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid $$;
+    grant usage on schema auth to authenticated; grant execute on function auth.uid() to authenticated;
+    create table public.leads(id uuid primary key default gen_random_uuid(), company_name text,contact_name text,service_type text,description text,email text,phone text,status text default 'novo',source text,utm_source text,utm_medium text,utm_campaign text,created_at timestamptz default now());
+    alter table public.leads enable row level security;
+    grant all on public.leads to authenticated, service_role;
+    grant select(email),update(email),insert(email) on public.leads to anon,authenticated;
+    create policy old_broad on public.leads for all to authenticated using(true) with check(true);
+    insert into auth.users values ('00000000-0000-0000-0000-000000000001'),('00000000-0000-0000-0000-000000000002');
+    insert into public.leads(company_name,email) values ('Empresa fictícia','teste@example.com');`);
+  await db.exec(await readFile(new URL('../supabase/migrations/202610080002_admin_leads.sql',import.meta.url),'utf8'));
+  await db.exec(`insert into public.admin_users(user_id) values ('00000000-0000-0000-0000-000000000001'); set role anon;`);
+  await assert.rejects(db.query('select email from public.leads'),/permission denied/);
+  await assert.rejects(db.query("update public.leads set email='indevido@example.com'"),/permission denied/);
+  await assert.rejects(db.query('select public.is_loung_admin()'),/permission denied/);
+  await db.exec(`reset role; set role authenticated; select set_config('request.jwt.claim.sub','00000000-0000-0000-0000-000000000002',false);`);
+  assert.equal((await db.query('select id from public.leads')).rows.length,0);
+  assert.equal((await db.query('select user_id from public.admin_users')).rows.length,0);
+  assert.equal((await db.query("update public.leads set status='fechado' returning id")).rows.length,0);
+  await assert.rejects(db.query("insert into public.admin_users(user_id) values (auth.uid())"),/permission denied/);
+  await db.exec(`select set_config('request.jwt.claim.sub','00000000-0000-0000-0000-000000000001',false);`);
+  assert.equal((await db.query('select id from public.leads')).rows.length,1);
+  for(const status of ['novo','em_contato','em_negociacao','proposta_enviada','fechado','perdido']) assert.equal((await db.query('update public.leads set status=$1 returning status',[status])).rows[0].status,status);
+  await assert.rejects(db.query("update public.leads set status='invalid'"),/row-level security/);
+  await assert.rejects(db.query("update public.leads set email='indevido@example.com'"),/permission denied/);
+  await assert.rejects(db.query("insert into public.leads(email) values ('teste@example.com')"),/permission denied/);
+  await assert.rejects(db.query('delete from public.leads'),/permission denied/);
+  await db.exec('reset role; set role service_role');
+  await db.query("insert into public.leads(company_name) values ('Backend fictício')");
+  await db.query("update public.leads set email='backend@example.com'");
+  await db.exec(`reset role; delete from public.admin_users; set role authenticated;`);
+  assert.equal((await db.query('select id from public.leads')).rows.length,0);
+ } finally {await db.close();}
+});

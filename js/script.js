@@ -13,7 +13,7 @@ navMenu.addEventListener('click', (event) => {
   const link = event.target.closest('a');
   if (!link) return;
   setMenu(false);
-  const section = document.querySelector(link.hash);
+  const section = link.hash ? document.querySelector(link.hash) : null;
   if (section) { section.setAttribute('tabindex', '-1'); section.focus({preventScroll:true}); }
 });
 document.addEventListener('keydown', (event) => {

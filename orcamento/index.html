@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Solicitar orçamento | Loung Tech</title>
+  <meta name="theme-color" content="#050816">
+  <link rel="canonical" href="https://loung-tech.vercel.app/orcamento">
+  <link rel="icon" href="/img/logo.jpeg" type="image/jpeg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Solicitar orçamento | Loung Tech">
+  <meta property="og:description" content="Conte o que seu negócio precisa e solicite uma proposta de site, sistema, loja virtual ou automação à Loung Tech.">
+  <meta property="og:url" content="https://loung-tech.vercel.app/orcamento">
+  <meta property="og:image" content="https://loung-tech.vercel.app/img/logo.jpeg">
+  <meta property="og:image:alt" content="Marca Loung Tech">
+  <meta name="twitter:card" content="summary">
+
+  <meta name="description" content="Conte o que seu negócio precisa e solicite uma proposta de site, sistema, loja virtual ou automação à Loung Tech.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="/css/style.css?v=3">
+  <link rel="stylesheet" href="/css/responsive.css?v=3">
+  <link rel="stylesheet" href="/css/animations.css?v=3">
+  <link rel="stylesheet" href="/orcamento/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="header" id="header">
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a href="/#inicio" class="logo">
+        <img src="/img/logo.jpeg" alt="" width="52" height="52">
+        Loung Tech
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+
+        <li><a href="/#servicos">Soluções</a></li>
+        <li><a href="/#processo">Processo</a></li>
+        <li><a href="/#portfolio">Portfólio</a></li>
+        <li><a href="/#sobre">Sobre</a></li>
+        <li><a href="/orcamento">Orçamento</a></li>
+      </ul>
+
+      <a
+        href="/orcamento"
+        class="nav-button"
+      >
+        Solicitar orçamento
+      </a>
+
+      <button class="menu-button" id="menu-button" type="button" aria-label="Abrir menu" aria-controls="nav-menu" aria-expanded="false">
+        <i aria-hidden="true" class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="budget-page" tabindex="-1">
+    <div class="container">
+      <div class="budget-heading">
+        <span class="eyebrow">SOLUÇÕES SOB MEDIDA</span>
+        <h1>Conte sua ideia. Nós desenvolvemos a solução.</h1>
+        <p>Conte um pouco sobre seu negócio e o que você precisa. Nossa equipe analisará sua solicitação e entrará em contato para entender melhor o projeto.</p>
+      </div>
+      <div class="budget-layout" id="budget-layout">
+        <div class="budget-panel">
+          <p class="form-notice" id="configuration-notice" hidden>O envio pelo formulário ainda está indisponível. Você pode preencher para organizar sua ideia e conversar com a equipe pelo <a href="https://wa.me/5511965973582" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>
+          <noscript><p class="form-notice">Ative o JavaScript para enviar o formulário ou entre em contato pelo WhatsApp ao lado.</p></noscript>
+          <div class="form-status" id="form-status" role="alert" aria-live="assertive" tabindex="-1"></div>
+          <form class="budget-form" id="lead-form" novalidate aria-busy="false">
+            <div class="field field-wide">
+              <label for="company_name">Nome da empresa</label>
+              <input id="company_name" name="company_name" required maxlength="150" autocomplete="organization" aria-describedby="company_name-error">
+              <label class="check-label" for="no-company"><input id="no-company" type="checkbox">Ainda não tenho empresa</label>
+              <span class="field-error" id="company_name-error"></span>
+            </div>
+            <div class="field field-wide">
+              <label for="contact_name">Nome do responsável</label>
+              <input id="contact_name" name="contact_name" required maxlength="150" autocomplete="name" aria-describedby="contact_name-error">
+              <span class="field-error" id="contact_name-error"></span>
+            </div>
+            <div class="field field-wide">
+              <label for="service_type">Serviço desejado</label>
+              <select id="service_type" name="service_type" required aria-describedby="service_type-error">
+                <option value="">Selecione uma opção</option>
+                <option value="site">Site profissional / Landing page</option>
+                <option value="sistema">Sistema personalizado / CRM</option>
+                <option value="loja">Loja virtual / E-commerce</option>
+                <option value="automacao">Automação de processos</option>
+                <option value="outro">Outro / Preciso de orientação</option>
+              </select>
+              <span class="field-error" id="service_type-error"></span>
+            </div>
+            <div class="field field-wide">
+              <label for="description">Descreva o que você precisa</label>
+              <textarea id="description" name="description" required minlength="10" maxlength="3000" aria-describedby="description-hint description-count description-error" placeholder="O que está dificultando a rotina do seu negócio? O que você gostaria de organizar ou melhorar?"></textarea>
+              <p class="field-hint" id="description-hint">Entre 10 e 3.000 caracteres. Não inclua senhas, dados de saúde ou outras informações sensíveis.</p>
+              <p class="character-count" id="description-count">0 / 3.000 caracteres</p>
+              <span class="field-error" id="description-error"></span>
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" required maxlength="254" autocomplete="email" inputmode="email" aria-describedby="email-error">
+              <span class="field-error" id="email-error"></span>
+            </div>
+            <div class="field">
+              <label for="phone">Telefone / WhatsApp</label>
+              <input id="phone" name="phone" type="tel" required maxlength="20" autocomplete="tel-national" inputmode="tel" placeholder="(11) 99999-9999" aria-describedby="phone-hint phone-error">
+              <p class="field-hint" id="phone-hint">Inclua o DDD.</p>
+              <span class="field-error" id="phone-error"></span>
+            </div>
+            <div class="field field-wide">
+              <label class="check-label" for="consent"><input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error"><span>Autorizo a Loung Tech a usar os dados informados para analisar e responder à minha solicitação, conforme a <a href="/privacidade" target="_blank" rel="noopener noreferrer">Política de Privacidade (abre em nova aba)</a>.</span></label>
+              <span class="field-error" id="consent-error"></span>
+            </div>
+            <div class="field field-wide"><div id="turnstile" aria-label="Verificação de segurança"></div></div>
+            <div class="field field-wide">
+              <button type="submit" class="btn btn-primary" id="submit-lead">Enviar solicitação</button>
+              <p class="budget-note">Seus dados serão usados para responder ao seu pedido. O envio não cria um contrato nem autoriza mensagens promocionais.</p>
+            </div>
+          </form>
+        </div>
+        <aside class="budget-aside" aria-label="Como funciona">
+          <h2>Da sua ideia ao próximo passo</h2>
+          <ol><li>Você conta o que precisa e como podemos entrar em contato.</li><li>Nossa equipe analisa o desafio e conversa com você.</li><li>Alinhamos a solução, as etapas e a proposta.</li></ol>
+          <p>Prefere conversar diretamente?</p>
+          <a href="https://wa.me/5511965973582" target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp ↗</a>
+          <p><a href="/#portfolio">Conhecer nossos projetos</a></p>
+        </aside>
+      </div>
+      <section class="budget-success" id="budget-success" hidden tabindex="-1" aria-labelledby="success-title">
+        <h2 id="success-title">Recebemos sua solicitação!</h2>
+        <p>Obrigado por entrar em contato com a Loung Tech. Nossa equipe recebeu suas informações e entrará em contato pelos dados informados.</p>
+        <a class="btn btn-primary" href="/">Voltar ao início</a>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <a href="/#inicio" class="logo">
+          <img src="/img/logo.jpeg" alt="" width="52" height="52">
+          Loung Tech
+        </a>
+
+        <p>Soluções digitais para simplificar a rotina do seu negócio.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="/orcamento">Solicitar orçamento</a>
+        <a href="/privacidade">Privacidade</a>
+        <a href="https://wa.me/5511965973582" target="_blank" rel="noopener noreferrer">
+          WhatsApp
+        </a>
+
+        <a href="https://www.instagram.com/loungtech.ti" target="_blank" rel="noopener noreferrer">
+          Instagram
+        </a>
+
+        <a href="mailto:loungtech.ti@gmail.com">
+          E-mail
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo" type="button" hidden>
+    <i aria-hidden="true" class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="/js/script.js?v=4"></script>
+  <script src="/js/campaign.js" defer></script>
+  <script src="/orcamento/config.js"></script>
+  <script type="module" src="/orcamento/script.js?v=2"></script>
+</body>
+</html>
