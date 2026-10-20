@@ -5,15 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Loung Tech | Soluções digitais sob medida para empresas</title>
-  <meta name="theme-color" content="#050816">
+  <meta name="theme-color" content="#000000">
   <link rel="canonical" href="https://loung-tech.vercel.app/">
-  <link rel="icon" href="img/logo.jpeg" type="image/jpeg">
+  <link rel="icon" href="img/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" href="img/previews/logo.png" type="image/png" sizes="830x830">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="Loung Tech | Soluções para os desafios do seu negócio">
   <meta property="og:description" content="Sites profissionais, sistemas personalizados, CRM e automação de processos. Conte à Loung Tech o que sua empresa precisa.">
   <meta property="og:url" content="https://loung-tech.vercel.app/">
-  <meta property="og:image" content="https://loung-tech.vercel.app/img/logo.jpeg">
+  <meta property="og:image" content="https://loung-tech.vercel.app/img/previews/logo.png">
+  <meta property="og:image:width" content="830">
+  <meta property="og:image:height" content="830">
   <meta property="og:image:alt" content="Marca Loung Tech">
   <meta name="twitter:card" content="summary">
 
@@ -21,106 +25,94 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  >
-
-  <link rel="stylesheet" href="css/style.css?v=3">
-  <link rel="stylesheet" href="css/responsive.css?v=3">
-  <link rel="stylesheet" href="css/animations.css?v=3">
+  <link rel="stylesheet" href="css/home.css?v=1">
 </head>
 
-<body>
+<body class="home">
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-
   <header class="header" id="header">
     <nav class="navbar container" aria-label="Navegação principal">
-      <a href="#inicio" class="logo">
-        <img src="img/logo.jpeg" alt="" width="52" height="52">
-        Loung Tech
-      </a>
-
+      <a href="#inicio" class="logo"><img src="img/previews/logo.png" alt="" width="830" height="830" fetchpriority="high"><span>loung tech<span class="brand-period">.</span></span></a>
       <ul class="nav-menu" id="nav-menu">
-
-        <li><a href="#servicos">Soluções</a></li>
-        <li><a href="#processo">Processo</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="/orcamento">Orçamento</a></li>
+        <li><a href="#servicos">Soluções</a></li><li><a href="#processo">Processo</a></li><li><a href="#portfolio">Portfólio</a></li><li><a href="#sobre">Sobre</a></li><li><a href="/orcamento">Orçamento</a></li>
       </ul>
-
-      <a
-        href="/orcamento"
-        class="nav-button"
-      >
-        Solicitar orçamento
-      </a>
-
-      <button class="menu-button" id="menu-button" type="button" aria-label="Abrir menu" aria-controls="nav-menu" aria-expanded="false">
-        <i aria-hidden="true" class="fa-solid fa-bars"></i>
-      </button>
+      <a href="/orcamento" class="nav-button">Solicitar orçamento <span aria-hidden="true">↗</span></a>
+      <button class="menu-button" id="menu-button" type="button" aria-label="Abrir menu" aria-controls="nav-menu" aria-expanded="false"><i aria-hidden="true" class="fa-solid fa-bars"></i></button>
     </nav>
   </header>
-
   <main id="conteudo" tabindex="-1">
-
-    <section class="hero section" id="inicio">
-      <div class="container hero-content">
-
-        <div class="hero-text reveal">
-          <span class="badge">
-            <i aria-hidden="true" class="fa-solid fa-bolt"></i>
-            SOLUÇÕES PARA O SEU NEGÓCIO
-          </span>
-
-          <h1>
-            Sua empresa tem desafios. <em>Nós desenvolvemos soluções.</em>
-          </h1>
-
-          <p>
-            Criamos sites, sistemas e automações sob medida para organizar processos, simplificar operações e ajudar sua empresa a crescer.
-          </p>
-
-          <div class="hero-buttons">
-            <a
-              href="/orcamento"
-              class="btn btn-primary"
-            >
-              <i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
-              Solicitar uma solução
-            </a>
-
-            <a href="#portfolio" class="btn btn-secondary">Conhecer nossos projetos <span aria-hidden="true">↗</span></a>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-kicker"><span><span class="status-dot" aria-hidden="true"></span> TECNOLOGIA A FAVOR DO SEU NEGÓCIO</span><span class="hero-edition">ESTRATÉGIA / DESIGN / DESENVOLVIMENTO</span></div>
+        <h1 id="hero-title">Menos processos<br>manuais. <span class="hero-lime">Mais negócios</span><br>em movimento<span class="hero-lime">.</span></h1>
+        <div class="hero-bottom">
+          <p class="hero-editorial">Seu próximo capítulo.<br><em>Desenvolvido sob medida.</em></p>
+          <div class="hero-summary"><p>Sites que posicionam. Sistemas que organizam. Automações que transformam a rotina do seu negócio.</p>
+            <div class="hero-buttons"><a href="/orcamento" class="btn btn-primary">Solicitar uma solução <span aria-hidden="true">↗</span></a><a href="#portfolio" class="text-link">Conhecer nossos projetos <span aria-hidden="true">↓</span></a></div>
+            <a class="hero-whatsapp" href="https://wa.me/5511965973582" target="_blank" rel="noopener noreferrer">Prefere conversar? Fale pelo WhatsApp <span aria-hidden="true">↗</span></a>
           </div>
-
-          <p class="hero-note">Conte seu desafio no formulário. Se preferir, converse pelo WhatsApp.</p>
-          <div class="hero-stats"><div><strong>Sob medida</strong><span>Para a sua realidade</span></div><div><strong>Do início à entrega</strong><span>Com etapas claras</span></div></div>
+        </div>
+        <div class="hero-index" aria-hidden="true"><span>PRESENÇA DIGITAL</span><span>SISTEMAS SOB MEDIDA</span><span>AUTOMAÇÃO DE PROCESSOS</span></div>
+      </div>
+    </section>
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-title reveal">
+          <span>01 / Projetos selecionados</span>
+          <h2>Ideias no papel.<br><em>Negócios no digital.</em></h2>
+          <p>Conheça algumas das soluções digitais desenvolvidas pela Loung Tech para negócios de diferentes segmentos.</p>
         </div>
 
-        <div class="hero-image">
-          <div class="solution-topline"><span class="status-dot"></span> IDEIAS QUE GANHAM FORMA <span>01 / 03</span></div>
-          <div class="solution-window">
-            <div class="window-bar"><span>● ● ●</span><span>Seu próximo projeto</span><span>↗</span></div>
-            <div class="solution-body"><span class="eyebrow">MAIS SIMPLES. MAIS CONECTADO.</span><h2>Uma presença digital.<br>Novas possibilidades.</h2>
-              <div class="solution-row"><span class="solution-icon">↗</span><div><strong>Apresente sua empresa</strong><p>Um site que aproxima novos clientes.</p></div><span>01</span></div>
-              <div class="solution-row"><span class="solution-icon">▦</span><div><strong>Organize sua operação</strong><p>Informações reunidas em um só lugar.</p></div><span>02</span></div>
-              <div class="solution-row"><span class="solution-icon">⌁</span><div><strong>Ganhe tempo no dia a dia</strong><p>Menos tarefas manuais e repetitivas.</p></div><span>03</span></div>
-            </div>
-          </div>
-          <div class="solution-caption"><span>LOUNG TECH / SOLUÇÕES DIGITAIS</span><a href="#servicos">Explorar soluções ↓</a></div>
+        <div class="portfolio-grid real-projects">
+          <article class="portfolio-card">
+            <div class="project-preview"><img src="img/previews/rafael-munhoz.png?v=3" alt="Prévia do site de Rafael Munhoz, com apresentação e foto do profissional ao lado de um cão" width="1280" height="720" loading="lazy"><span class="demo-tag real-tag">PROJETO REAL</span></div>
+            <div class="project-content">
+            <span>Medicina Veterinária</span><h3>Rafael Munhoz</h3>
+            <p>Site de apresentação profissional com serviços de adestramento e orientação ao tutor, fotos do trabalho e contato direto pelo WhatsApp.</p>
+            <a class="btn-projeto" href="https://site-rafael-munhoz.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar site de Rafael Munhoz (abre em nova aba)">Visitar site <span aria-hidden="true">↗</span></a>
+          </div></article>
+          <article class="portfolio-card">
+            <div class="project-preview"><img src="img/previews/gabriella-barros.png?v=3" alt="Prévia do site da Dra. Gabriella Barros, com apresentação da dentista e chamada para agendamento" width="1280" height="720" loading="lazy"><span class="demo-tag real-tag">PROJETO REAL</span></div>
+            <div class="project-content">
+            <span>Odontologia</span><h3>Dra. Gabriella Barros</h3>
+            <p>Site profissional com apresentação da cirurgiã-dentista, tratamentos, galeria de casos e chamadas para agendamento pelo WhatsApp.</p>
+            <a class="btn-projeto" href="https://dragabriellabarros.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar site da Dra. Gabriella Barros (abre em nova aba)">Visitar site <span aria-hidden="true">↗</span></a>
+          </div></article>
+          <article class="portfolio-card">
+            <div class="project-preview"><img src="img/previews/central-jotape.jpg" alt="Captura real do portal Central Jotape MC, com identidade editorial e destaque para o artista" width="1280" height="720" loading="lazy" decoding="async"><span class="demo-tag real-tag">PROJETO REAL</span></div>
+            <div class="project-content">
+            <span>Portal de Notícias</span><h3>Central Jotape MC</h3>
+            <p>Plataforma digital para divulgação de notícias, eventos e conteúdos sobre rap e batalhas de rima, com identidade visual personalizada e design responsivo.</p>
+            <ul class="project-highlights" aria-label="Destaques de Central Jotape MC"><li>Portal de notícias</li><li>Painel administrativo de conteúdo</li></ul>
+            <a class="btn-projeto" href="https://central-jotape.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar site de Central Jotape MC (abre em nova aba)">Visitar site <span aria-hidden="true">↗</span></a>
+          </div></article>
+          <article class="portfolio-card">
+            <div class="project-preview"><img src="img/previews/casa-naturaleh.jpg" alt="Captura real da loja Casa Naturaleh, com apresentação de produtos naturais e chamada para o catálogo" width="1280" height="720" loading="lazy" decoding="async"><span class="demo-tag real-tag">PROJETO REAL</span></div>
+            <div class="project-content">
+            <span>E-commerce</span><h3>Casa Naturaleh</h3>
+            <p>Loja virtual personalizada com catálogo de produtos, páginas individuais e carrinho de compras, desenvolvida com foco na experiência do usuário.</p>
+            <ul class="project-highlights" aria-label="Destaques de Casa Naturaleh"><li>Catálogo e páginas de produtos</li><li>Carrinho de compras</li><li>Layout responsivo</li></ul>
+            <a class="btn-projeto" href="https://casa-naturaleh.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar site de Casa Naturaleh (abre em nova aba)">Visitar site <span aria-hidden="true">↗</span></a>
+          </div></article>
+          <article class="portfolio-card">
+            <div class="project-preview"><img src="img/previews/bella-y-essencia.jpg" alt="Captura real do site Bella y Essencia, com apresentação dos cuidados estéticos e chamada para avaliação" width="1280" height="720" loading="lazy" decoding="async"><span class="demo-tag real-tag">PROJETO REAL</span></div>
+            <div class="project-content">
+            <span>Estética e Bem-estar</span><h3>Bella y Essencia</h3>
+            <p>Site institucional para apresentar serviços de estética e bem-estar com uma experiência digital elegante, intuitiva e adaptada a diferentes dispositivos.</p>
+            <ul class="project-highlights" aria-label="Destaques de Bella y Essencia"><li>Serviços e identidade personalizada</li><li>Contato e avaliação pelo WhatsApp</li></ul>
+            <a class="btn-projeto" href="https://bela-y-essencia.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar site de Bella y Essencia (abre em nova aba)">Visitar site <span aria-hidden="true">↗</span></a>
+          </div></article>
         </div>
       </div>
     </section>
-
     <section class="section services" id="servicos">
       <div class="container">
 
         <div class="section-title reveal">
-          <span>Soluções</span>
-          <h2>Soluções digitais para o seu negócio</h2>
+          <span>02 / Soluções sob medida</span>
+          <h2>O próximo passo do seu negócio começa aqui.</h2>
           <p>
             Presença digital, operação e vendas: encontre a solução para o que sua empresa precisa organizar ou melhorar.
           </p>
@@ -128,7 +120,7 @@
 
         <div class="services-grid">
           <article class="service-card reveal">
-            <i aria-hidden="true" class="fa-solid fa-globe"></i>
+            <span class="service-number" aria-hidden="true">01</span>
             <span class="service-label">Sites profissionais</span>
             <h3>Seu negócio com a presença digital que merece.</h3>
             <p>Criamos sites profissionais que apresentam sua empresa, fortalecem sua credibilidade e facilitam o contato com novos clientes.</p>
@@ -136,7 +128,7 @@
           </article>
 
           <article class="service-card reveal">
-            <i aria-hidden="true" class="fa-solid fa-laptop-code"></i>
+            <span class="service-number" aria-hidden="true">02</span>
             <span class="service-label">Sistemas personalizados</span>
             <h3>Mais controle e organização para sua empresa.</h3>
             <p>Desenvolvemos sistemas sob medida para centralizar informações, organizar operações e reduzir o trabalho manual do dia a dia.</p>
@@ -144,7 +136,7 @@
           </article>
 
           <article class="service-card reveal">
-            <i aria-hidden="true" class="fa-solid fa-address-book"></i>
+            <span class="service-number" aria-hidden="true">03</span>
             <span class="service-label">CRM e gestão comercial</span>
             <h3>Suas oportunidades em um só lugar.</h3>
             <p>Organize contatos, acompanhe negociações e tenha mais visibilidade sobre seu processo comercial com uma solução adaptada ao seu negócio.</p>
@@ -152,7 +144,7 @@
           </article>
 
           <article class="service-card reveal">
-            <i aria-hidden="true" class="fa-solid fa-cart-shopping"></i>
+            <span class="service-number" aria-hidden="true">04</span>
             <span class="service-label">Lojas virtuais</span>
             <h3>Sua loja pronta para vender no digital.</h3>
             <p>Desenvolvemos lojas virtuais personalizadas para apresentar produtos, facilitar a jornada de compra e oferecer uma experiência profissional aos clientes.</p>
@@ -160,7 +152,7 @@
           </article>
 
           <article class="service-card reveal">
-            <i aria-hidden="true" class="fa-solid fa-robot"></i>
+            <span class="service-number" aria-hidden="true">05</span>
             <span class="service-label">Automação de processos</span>
             <h3>Menos tarefas repetitivas. Mais tempo para seu negócio.</h3>
             <p>Automatizamos atividades operacionais para reduzir retrabalho, melhorar a organização e liberar tempo para o que precisa da sua atenção.</p>
@@ -168,7 +160,7 @@
           </article>
 
           <article class="service-card reveal">
-            <i aria-hidden="true" class="fa-solid fa-plug"></i>
+            <span class="service-number" aria-hidden="true">06</span>
             <span class="service-label">Conexão entre ferramentas</span>
             <h3>Informações conectadas. Menos retrabalho.</h3>
             <p>Conectamos as ferramentas que sua equipe já usa para evitar cadastros repetidos e facilitar a troca de informações entre áreas.</p>
@@ -178,176 +170,68 @@
 
       </div>
     </section>
-
     <section class="section process" id="processo">
       <div class="container">
 
         <div class="section-title reveal">
-          <span>Processo</span>
-          <h2>Da primeira conversa à entrega</h2>
+          <span>03 / Como trabalhamos</span>
+          <h2>Clareza em cada etapa.<br><em>Proximidade em todo o caminho.</em></h2>
           <p>Antes de propor uma solução, entendemos sua operação. Depois, combinamos as etapas para acompanhar o projeto com clareza.</p>
         </div>
 
-        <div class="process-grid">
-          <div class="process-card reveal">
+        <ol class="process-grid">
+          <li class="process-card reveal">
             <span>01</span>
             <h3>Entender o desafio</h3>
             <p>Entendemos sua necessidade, objetivo e o problema que precisa ser resolvido.</p>
-          </div>
+          </li>
 
-          <div class="process-card reveal">
+          <li class="process-card reveal">
             <span>02</span>
             <h3>Definir a solução</h3>
             <p>Combinamos o que será feito, as etapas e os prazos do projeto.</p>
-          </div>
+          </li>
 
-          <div class="process-card reveal">
+          <li class="process-card reveal">
             <span>03</span>
             <h3>Construir juntos</h3>
             <p>Desenvolvemos a solução e alinhamos os detalhes com você ao longo do projeto.</p>
-          </div>
+          </li>
 
-          <div class="process-card reveal">
+          <li class="process-card reveal">
             <span>04</span>
             <h3>Entrega</h3>
             <p>Validamos o funcionamento, orientamos o uso e preparamos a solução para a sua rotina.</p>
-          </div>
-        </div>
+          </li>
+        </ol>
 
       </div>
     </section>
-
-    <section class="section portfolio" id="portfolio">
-      <div class="container">
-        <div class="section-title reveal">
-          <span>Portfólio</span>
-          <h2>Projetos que transformam ideias em soluções reais.</h2>
-          <p>Conheça algumas das soluções digitais desenvolvidas pela Loung Tech para negócios de diferentes segmentos.</p>
-        </div>
-
-        <div class="portfolio-grid real-projects">
-          <article class="portfolio-card">
-            <div class="project-preview"><img src="img/previews/rafael-munhoz.png?v=3" alt="Prévia do site de Rafael Munhoz, com apresentação e foto do profissional ao lado de um cão" width="1280" height="720" loading="lazy"><span class="demo-tag real-tag">PROJETO REAL</span></div>
-            <span>Medicina Veterinária</span><h3>Rafael Munhoz</h3>
-            <p>Site de apresentação profissional com serviços de adestramento e orientação ao tutor, fotos do trabalho e contato direto pelo WhatsApp.</p>
-            <a class="btn-projeto" href="https://site-rafael-munhoz.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar site de Rafael Munhoz (abre em nova aba)">Visitar site <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="portfolio-card">
-            <div class="project-preview"><img src="img/previews/gabriella-barros.png?v=3" alt="Prévia do site da Dra. Gabriella Barros, com apresentação da dentista e chamada para agendamento" width="1280" height="720" loading="lazy"><span class="demo-tag real-tag">PROJETO REAL</span></div>
-            <span>Odontologia</span><h3>Dra. Gabriella Barros</h3>
-            <p>Site profissional com apresentação da cirurgiã-dentista, tratamentos, galeria de casos e chamadas para agendamento pelo WhatsApp.</p>
-            <a class="btn-projeto" href="https://dragabriellabarros.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar site da Dra. Gabriella Barros (abre em nova aba)">Visitar site <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="portfolio-card">
-            <div class="project-preview"><img src="img/previews/central-jotape.jpg" alt="Captura real do portal Central Jotape MC, com identidade editorial e destaque para o artista" width="1280" height="720" loading="lazy" decoding="async"><span class="demo-tag real-tag">PROJETO REAL</span></div>
-            <span>Portal de Notícias</span><h3>Central Jotape MC</h3>
-            <p>Plataforma digital para divulgação de notícias, eventos e conteúdos sobre rap e batalhas de rima, com identidade visual personalizada e design responsivo.</p>
-            <ul class="project-highlights" aria-label="Destaques de Central Jotape MC"><li>Portal de notícias</li><li>Painel administrativo de conteúdo</li></ul>
-            <a class="btn-projeto" href="https://central-jotape.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar site de Central Jotape MC (abre em nova aba)">Visitar site <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="portfolio-card">
-            <div class="project-preview"><img src="img/previews/casa-naturaleh.jpg" alt="Captura real da loja Casa Naturaleh, com apresentação de produtos naturais e chamada para o catálogo" width="1280" height="720" loading="lazy" decoding="async"><span class="demo-tag real-tag">PROJETO REAL</span></div>
-            <span>E-commerce</span><h3>Casa Naturaleh</h3>
-            <p>Loja virtual personalizada com catálogo de produtos, páginas individuais e carrinho de compras, desenvolvida com foco na experiência do usuário.</p>
-            <ul class="project-highlights" aria-label="Destaques de Casa Naturaleh"><li>Catálogo e páginas de produtos</li><li>Carrinho de compras</li><li>Layout responsivo</li></ul>
-            <a class="btn-projeto" href="https://casa-naturaleh.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar site de Casa Naturaleh (abre em nova aba)">Visitar site <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="portfolio-card">
-            <div class="project-preview"><img src="img/previews/bella-y-essencia.jpg" alt="Captura real do site Bella y Essencia, com apresentação dos cuidados estéticos e chamada para avaliação" width="1280" height="720" loading="lazy" decoding="async"><span class="demo-tag real-tag">PROJETO REAL</span></div>
-            <span>Estética e Bem-estar</span><h3>Bella y Essencia</h3>
-            <p>Site institucional para apresentar serviços de estética e bem-estar com uma experiência digital elegante, intuitiva e adaptada a diferentes dispositivos.</p>
-            <ul class="project-highlights" aria-label="Destaques de Bella y Essencia"><li>Serviços e identidade personalizada</li><li>Contato e avaliação pelo WhatsApp</li></ul>
-            <a class="btn-projeto" href="https://bela-y-essencia.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visitar site de Bella y Essencia (abre em nova aba)">Visitar site <span aria-hidden="true">↗</span></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-
     <section class="section about" id="sobre">
-      <div class="container about-content reveal">
-        <span>Sobre a Loung Tech</span>
-
-        <h2>
-          Tecnologia desenvolvida para a realidade do seu negócio.
-        </h2>
-
-        <p>
-          Cada empresa tem desafios próprios. Na Loung Tech, entendemos sua operação e suas necessidades antes de propor uma solução digital personalizada.
-        </p>
-
-        <p>
-          Criamos sites, sistemas e automações para simplificar processos, organizar informações e abrir novas possibilidades para o seu negócio. Você acompanha o projeto com etapas e expectativas claras.
-        </p>
+      <div class="container about-content">
+        <div class="about-label"><span class="eyebrow">04 / A Loung Tech</span><p>Tecnologia é o meio.<br><em>Seu negócio é o ponto de partida.</em></p></div>
+        <div class="about-copy"><h2>Sob medida.<br>De perto.<br><em>Do seu jeito.</em></h2><p>Cada empresa tem desafios próprios. Na Loung Tech, entendemos sua operação e suas necessidades antes de propor uma solução digital personalizada.</p><p>Criamos sites, sistemas e automações para simplificar processos, organizar informações e abrir novas possibilidades para o seu negócio. Você acompanha o projeto com etapas e expectativas claras.</p><a class="text-link" href="#processo">Conheça nossa forma de trabalhar <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
-
     <section class="section cta" id="contato">
-      <div class="container cta-content reveal">
-        <h2>O que está dificultando o crescimento do seu negócio?</h2>
-
-        <p>
-          Processos desorganizados, tarefas manuais ou falta de presença digital podem limitar sua operação. Conte para a Loung Tech o que sua empresa precisa. Vamos entender seu desafio e desenvolver uma solução adequada à sua realidade.
-        </p>
-
-        <div class="cta-buttons">
-          <a
-            href="/orcamento"
-            class="btn btn-primary"
-          >
-            <i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
-            Quero conversar sobre meu projeto
-          </a>
-
-          <a
-            href="https://wa.me/5511965973582"
-            target="_blank" rel="noopener noreferrer"
-            class="btn btn-secondary"
-          >
-            <i aria-hidden="true" class="fa-brands fa-whatsapp"></i>
-            Falar pelo WhatsApp
-          </a>
-        </div>
-        <p class="contact-note">Prefere conversar diretamente? Fale pelo WhatsApp ou envie os detalhes do projeto por e-mail.</p>
+      <div class="container cta-content">
+        <span class="eyebrow">05 / Vamos construir o próximo passo</span>
+        <h2>Seu negócio não<br>precisa ficar <em>parado.</em></h2>
+        <div class="contact-bottom"><p>Conte o que você precisa organizar, conectar ou transformar. Vamos entender seu desafio e pensar na solução juntos.</p><div class="cta-buttons"><a href="/orcamento" class="btn btn-dark">Solicitar orçamento <span aria-hidden="true">↗</span></a><a href="https://wa.me/5511965973582" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Falar pelo WhatsApp <span aria-hidden="true">↗</span></a></div></div>
       </div>
     </section>
-
   </main>
-
   <footer class="footer">
-    <div class="container footer-content">
-      <div>
-        <a href="#inicio" class="logo">
-          <img src="img/logo.jpeg" alt="" width="52" height="52">
-          Loung Tech
-        </a>
-
-        <p>Soluções digitais para simplificar a rotina do seu negócio.</p>
+    <div class="container">
+      <div class="footer-content"><div class="footer-brand"><a href="#inicio" class="logo"><img src="img/previews/logo.png" alt="" width="830" height="830" loading="lazy"><span>loung tech<span class="brand-period">.</span></span></a><p>Soluções digitais para simplificar<br>a rotina do seu negócio.</p></div>
+        <div class="footer-column"><span class="footer-label">COMECE UMA CONVERSA</span><a class="footer-email" href="mailto:loungtech.ti@gmail.com">loungtech.ti@gmail.com <span aria-hidden="true">↗</span></a><div class="footer-links"><a href="https://wa.me/5511965973582" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><a href="https://www.instagram.com/loungtech.ti" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="/orcamento">Solicitar orçamento ↗</a></div></div>
       </div>
-
-      <div class="footer-links">
-        <a href="/orcamento">Solicitar orçamento</a>
-        <a href="/privacidade">Privacidade</a>
-        <a href="https://wa.me/5511965973582" target="_blank" rel="noopener noreferrer">
-          WhatsApp
-        </a>
-
-        <a href="https://www.instagram.com/loungtech.ti" target="_blank" rel="noopener noreferrer">
-          Instagram
-        </a>
-
-        <a href="mailto:loungtech.ti@gmail.com">
-          E-mail
-        </a>
-      </div>
+      <div class="footer-bottom"><span>LOUNG TECH / TECNOLOGIA SOB MEDIDA</span><a href="/privacidade">Privacidade</a><a href="#inicio">Voltar ao início ↑</a></div>
     </div>
   </footer>
-
-  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo" type="button" hidden>
-    <i aria-hidden="true" class="fa-solid fa-arrow-up"></i>
-  </button>
-
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo" type="button" hidden><span aria-hidden="true">↑</span></button>
   <script src="js/script.js?v=3"></script>
+  <script src="js/home.js?v=1"></script>
   <script src="js/campaign.js" defer></script>
 </body>
 </html>
